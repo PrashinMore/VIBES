@@ -3888,22 +3888,14 @@ def outside_program():
                         megapikachu5z5.set('')
                         megapikachu6z6.set('')
                         __MOF__.set('')
-                    def vikashit():
+                    def addEvent():
                         '''GETTING VALUES'''
-                        fnames=megapikachuz.get()
-                        fnames=fnames.upper()
-                        lnames=megapikachu2z.get()
-                        lnames=lnames.upper()
-                        std=megapikachu3z.get()
-                        std=std.upper()
-                        deadspy_email=megapikachu4z.get()
-                        CLG=megapikachu5z.get()
-                        CLG=CLG.upper()
-                        oneplus=megapikachu6z.get()
-                        MF=__MOF__ .get()
-                        cur.execute(f'update  Students_database set fName="{fnames}",lName="{lnames}",STD="{std}",Email_ID="{deadspy_email}",College_Name="{CLG}",Gender="{MF}" where Mobile_No="{oneplus}"')
-                        
-                        showalldata()
+                        ename=megapikachuz.get()
+                        print(ename)
+                        fee=megapikachu6z.get()
+                        Participants=megapikachu3z.get()
+                        with open('allevents.txt', 'a+') as f:
+                            f.write('\n'+ename)
                         
                     
                     
@@ -3921,7 +3913,7 @@ def outside_program():
                         clearit()
                         
                     
-                    neelC=Button(shubham_y,cursor='hand2',relief=RIDGE,highlightcolor='orange',highlightbackground='orange',highlightthickness=1,activebackground="black",border=0,activeforeground="orange",text="Edit Events",command=vikashit,fg='black',bg='orange',height=2,width=14)
+                    neelC=Button(shubham_y,cursor='hand2',relief=RIDGE,highlightcolor='orange',highlightbackground='orange',highlightthickness=1,activebackground="black",border=0,activeforeground="orange",text="Edit Events",command=addEvent,fg='black',bg='orange',height=2,width=14)
                     neelC.grid(row=0,column=0,padx=10,pady=9)
                     ''''''
                     
