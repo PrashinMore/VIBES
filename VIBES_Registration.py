@@ -11,7 +11,8 @@ con=sq.connect("VIBES_DATABASE.db")
 cur=con.cursor()
 cur.execute("CREATE TABLE IF NOT EXISTS Students_database(fName varchar(16),lName varchar(16),STD varchar(6),Email_ID text ,College_Name text ,Mobile_No num,Gender varchar(8),Totalammo num,Box_Cricket varchar(6),Rink_Football varchar(6),Badminton varchar(6),Carrom_Solo varchar(6),Carrom_Duo varchar(6),Table_Tennis varchar(6),Chess varchar(6),Counter_Strike_Five_M varchar(6),Counter_Strike_Three_M varchar(6),Pubg_Solo varchar(6),Pubg_Squad varchar(6),Pubg_TDM varchar(6),Pubg_Squad_TDM varchar(6),Dance_Solo varchar(6),Dance_Group_Duo varchar(6),Dance_Group_Squad varchar(6),Fifa varchar(6),Singing varchar(6),Rapping varchar(6),Beatboxing varchar(6),Photography varchar(6),Mehndi varchar(6))")
 con.commit()
-
+cur.execute("CREATE TABLE IF NOT EXISTS New_Events_list(EventName char(20), Fee int(3), Participants int(2))")
+con.commit()
 '''##############################################'''
 
 def outside_program():
@@ -3893,7 +3894,12 @@ def outside_program():
                         ename=megapikachuz.get()
                         print(ename)
                         fee=megapikachu6z.get()
-                        Participants=megapikachu3z.get()
+                        Participants =megapikachu3z.get()
+                        print(3897)
+                        print(cur.execute("ALTER TABLE Students_database ADD "+ename+" varchar(6)"))
+                        print(cur.execute(f'INSERT INTO New_Events_list values("{enames}","{fee}","{participants}")'))
+                        print(3899)
+                        con.commit()
                         with open('allevents.txt', 'a+') as f:
                             f.write('\n'+ename)
                         
@@ -3913,7 +3919,7 @@ def outside_program():
                         clearit()
                         
                     
-                    neelC=Button(shubham_y,cursor='hand2',relief=RIDGE,highlightcolor='orange',highlightbackground='orange',highlightthickness=1,activebackground="black",border=0,activeforeground="orange",text="Edit Events",command=addEvent,fg='black',bg='orange',height=2,width=14)
+                    neelC=Button(shubham_y,cursor='hand2',relief=RIDGE,highlightcolor='orange',highlightbackground='orange',highlightthickness=1,activebackground="black",border=0,activeforeground="orange",text="Add Events",command=addEvent,fg='black',bg='orange',height=2,width=14)
                     neelC.grid(row=0,column=0,padx=10,pady=9)
                     ''''''
                     
