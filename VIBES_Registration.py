@@ -7,11 +7,14 @@ from tkinter import ttk
 import re
 import sqlite3 as sq
 '''Creating Database'''
+eventscheck={}
 con=sq.connect("VIBES_DATABASE.db")
 cur=con.cursor()
 cur.execute("CREATE TABLE IF NOT EXISTS Students_database(fName varchar(16),lName varchar(16),STD varchar(6),Email_ID text ,College_Name text ,Mobile_No num,Gender varchar(8),Totalammo num,Box_Cricket varchar(6),Rink_Football varchar(6),Badminton varchar(6),Carrom_Solo varchar(6),Carrom_Duo varchar(6),Table_Tennis varchar(6),Chess varchar(6),Counter_Strike_Five_M varchar(6),Counter_Strike_Three_M varchar(6),Pubg_Solo varchar(6),Pubg_Squad varchar(6),Pubg_TDM varchar(6),Pubg_Squad_TDM varchar(6),Dance_Solo varchar(6),Dance_Group_Duo varchar(6),Dance_Group_Squad varchar(6),Fifa varchar(6),Singing varchar(6),Rapping varchar(6),Beatboxing varchar(6),Photography varchar(6),Mehndi varchar(6))")
 con.commit()
 cur.execute("CREATE TABLE IF NOT EXISTS New_Events_list(EventName char(20), Fee int(3), Participants int(2))")
+cur.execute('select * from New_Events_list')
+eventslist = cur.fetchall()
 con.commit()
 '''##############################################'''
 
@@ -274,6 +277,8 @@ def outside_program():
                                                         p013.place_forget()
                                                         p014.place_forget()
                                                         p015.place_forget()
+                                                        for idx, event in enumerate(eventslist):
+                                                            eventscheck[idx].place_forget()
                                                         
             
 
@@ -504,6 +509,9 @@ def outside_program():
                                                         p013.place_forget()
                                                         p014.place_forget()
                                                         p015.place_forget()
+                                                        for idx, event in enumerate(eventslist):
+                                                            eventscheck[idx].place_forget()
+                                                        
                                                         
                                                         
                                                         def backbtn0001():
@@ -1128,7 +1136,13 @@ def outside_program():
                                takefocus = 0)
             p015.place(x = 800, y = 430) 
             p15p=20
-              
+            y=430
+            for idx, event in enumerate(eventslist):
+                print("event and index",event,idx)
+                y=y+20
+                eventscheck[idx]=Checkbutton(pikachu,variable=p15, text =event[0],font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+                               takefocus = 0)
+                eventscheck[idx].place(x=800,y=y)
             
 
             arceus=Button(pikachu,command=pokeball,state=NORMAL,activebackground="black",border=0,activeforeground="orange",text="Submit",fg='black',bg='orange',height=3,width=16)
@@ -1201,6 +1215,8 @@ def outside_program():
                 p013.place_forget()
                 p014.place_forget()
                 p015.place_forget()
+                for idx, event in enumerate(eventslist):
+                    eventscheck[idx].place_forget()
                 ''''''
                 zapados.place_forget()
             ash=os.getcwd()
@@ -3897,9 +3913,16 @@ def outside_program():
                         Participants =megapikachu3z.get()
                         print(3897)
                         print(cur.execute("ALTER TABLE Students_database ADD "+ename+" varchar(6)"))
-                        print(cur.execute(f'INSERT INTO New_Events_list values("{enames}","{fee}","{participants}")'))
-                        print(3899)
+                        print(cur.execute(f'INSERT INTO New_Events_list (EventName,Fee,Participants) values ("{ename}","{fee}","{Participants}")'))
+                        
+
+                        for event in eventslist:
+                            print(event)
+
+                        print(3902)
                         con.commit()
+                        print(3899)
+                        
                         with open('allevents.txt', 'a+') as f:
                             f.write('\n'+ename)
                         
