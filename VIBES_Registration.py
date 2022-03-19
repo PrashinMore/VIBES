@@ -7,13 +7,14 @@ from tkinter import ttk
 import re
 import sqlite3 as sq
 '''Creating Database'''
-eventscheck={}
+eventsCheck={}
+eventVariable={}
 con=sq.connect("VIBES_DATABASE.db")
 cur=con.cursor()
-cur.execute("CREATE TABLE IF NOT EXISTS Students_database(fName varchar(16),lName varchar(16),STD varchar(6),Email_ID text ,College_Name text ,Mobile_No num,Gender varchar(8),Totalammo num,Box_Cricket varchar(6),Rink_Football varchar(6),Badminton varchar(6),Carrom_Solo varchar(6),Carrom_Duo varchar(6),Table_Tennis varchar(6),Chess varchar(6),Counter_Strike_Five_M varchar(6),Counter_Strike_Three_M varchar(6),Pubg_Solo varchar(6),Pubg_Squad varchar(6),Pubg_TDM varchar(6),Pubg_Squad_TDM varchar(6),Dance_Solo varchar(6),Dance_Group_Duo varchar(6),Dance_Group_Squad varchar(6),Fifa varchar(6),Singing varchar(6),Rapping varchar(6),Beatboxing varchar(6),Photography varchar(6),Mehndi varchar(6))")
+cur.execute("CREATE TABLE IF NOT EXISTS Students_database3(fName varchar(16),lName varchar(16),STD varchar(6),Email_ID text ,College_Name text ,Mobile_No num,Gender varchar(8),Totalammo num,Box_Cricket varchar(6),Rink_Football varchar(6),Badminton varchar(6),Carrom_Solo varchar(6),Carrom_Duo varchar(6),Table_Tennis varchar(6),Chess varchar(6),Counter_Strike_Five_M varchar(6),Counter_Strike_Three_M varchar(6),Pubg_Solo varchar(6),Pubg_Squad varchar(6),Pubg_TDM varchar(6),Pubg_Squad_TDM varchar(6),Dance_Solo varchar(6),Dance_Group_Duo varchar(6),Dance_Group_Squad varchar(6),Fifa varchar(6),Singing varchar(6),Rapping varchar(6),Beatboxing varchar(6),Photography varchar(6),Mehndi varchar(6))")
 con.commit()
-cur.execute("CREATE TABLE IF NOT EXISTS New_Events_list(EventName char(20), Fee int(3), Participants int(2))")
-cur.execute('select * from New_Events_list')
+cur.execute("CREATE TABLE IF NOT EXISTS New_Events_list3(EventName char(20), Fee int(3), Participants int(2))")
+cur.execute('select * from New_Events_list3')
 eventslist = cur.fetchall()
 con.commit()
 '''##############################################'''
@@ -22,11 +23,8 @@ def outside_program():
     
     def pokemon():
         pikachu=Tk()
-
         pikachu.attributes("-fullscreen",True)
-
         pikachu.config(bg="black")
-        
         pikachu.title('Vibes')
         raichu=Label(pikachu,text="Vibes Registration",font=("Times",30,"bold"),bg="blue",fg="yellow")
         raichu.pack(side=TOP,fill=X)
@@ -120,7 +118,7 @@ def outside_program():
                                     else:
                                         '''CHECKING MOBILE DATA'''
                                         oneplus=megapikachu60.get()
-                                        v=cur.execute('select * from Students_database')
+                                        v=cur.execute('select * from Students_database3')
                                         vo=str(cur.fetchall())
                                         
                                         if  len(oneplus)<10:
@@ -137,9 +135,10 @@ def outside_program():
                                             if MF == "Male" or MF == "Female" :
                                                 '''CHECK the CHECK-buttons'''
                                                 arceus.configure(state=DISABLED)
-                                                
-
-                                                cur.execute(f'Insert Into Students_database values("{fnames}","{lnames}","{std}","{deadspy_email}","{CLG}","{oneplus}","{MF}","","","","","","","","","","","","","","","","","","","","","","","")')
+                                                columns=""    
+                                                for idx, event in enumerate(eventslist):
+                                                    columns=",\"\""
+                                                cur.execute(f'Insert Into Students_database3 values("{fnames}","{lnames}","{std}","{deadspy_email}","{CLG}","{oneplus}","{MF}","","","","","","","","","","","","","","","","","","","","","","",""{columns})')
                                                 
                                                 con.commit()
 
@@ -156,9 +155,9 @@ def outside_program():
                                                     if brock == 1:
                                                         ''''''
                                                         
-                                                        cur.execute(f'Update Students_database set Box_Cricket = "yes"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Box_Cricket = "yes"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
-                                                        #dead=cur.execute("select * from Students_database;")
+                                                        #dead=cur.execute("select * from Students_database3;")
                                                         
                                                         TotalSum.append(p1p)
                                                         
@@ -183,9 +182,10 @@ def outside_program():
                                                         BTBX()
                                                         PGY()
                                                         MDI()
+                                                        Elist()
                                                         
                                                         bj=sum(TotalSum)
-                                                        cur.execute(f'Update Students_database set Totalammo = "{bj}"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Totalammo = "{bj}"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         dialga="Total Amount = RS."+str(bj)
                                                         MEGA_ARCEUS=Label(pikachu,text=dialga,width=30,bg='blue',fg='yellow',font=("Times",50,"bold"))
@@ -278,7 +278,7 @@ def outside_program():
                                                         p014.place_forget()
                                                         p015.place_forget()
                                                         for idx, event in enumerate(eventslist):
-                                                            eventscheck[idx].place_forget()
+                                                            eventsCheck[idx].place_forget()
                                                         
             
 
@@ -389,7 +389,7 @@ def outside_program():
 
                                                     else:
                                                         ''''''
-                                                        cur.execute(f'Update Students_database set Box_Cricket = "no"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Box_Cricket = "no"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         RF()
                                                         BD()
@@ -415,7 +415,7 @@ def outside_program():
                                                         pl7.place_forget()
                                                         bj=sum(TotalSum)
 
-                                                        cur.execute(f'Update Students_database set Totalammo = "{bj}"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Totalammo = "{bj}"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         
                                                         dialga="Total Amount = RS."+str(bj)
@@ -510,7 +510,7 @@ def outside_program():
                                                         p014.place_forget()
                                                         p015.place_forget()
                                                         for idx, event in enumerate(eventslist):
-                                                            eventscheck[idx].place_forget()
+                                                            eventsCheck[idx].place_forget()
                                                         
                                                         
                                                         
@@ -620,22 +620,41 @@ def outside_program():
                                                     if brock == 1:
                                                         ''''''
                                                         
-                                                        cur.execute(f'Update Students_database set Rink_Football = "yes"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Rink_Football = "yes"  where Mobile_No="{oneplus}"  ')
                                                         
                                                         
                                                         TotalSum.append(p2p)
                                                         
 
                                                     else:
-                                                        cur.execute(f'Update Students_database set Rink_Football = "no"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Rink_Football = "no"  where Mobile_No="{oneplus}"  ')
                                                         ''''''
                                                         
+                                                def Elist():
+                                                    for idx,event in enumerate(eventslist):
+                                                        brock=eventsCheck[idx].get()  
+
+                                                        if brock == 1:
+                                                            ''''''
+                                                            
+                                                            cur.execute(f'Update Students_database3 set {event[0]} = "yes"  where Mobile_No="{oneplus}"  ')
+                                                            
+                                                            print(event)
+                                                            TotalSum.append(event[1])
+
+                                                            
+
+                                                        else:
+                                                            cur.execute(f'Update Students_database3 set {event[0]} = "no"  where Mobile_No="{oneplus}"  ')
+
+
+
                                                 def BD():
                                                     brock=p3.get()
                                                     if brock == 1:
                                                         ''''''
                                                         
-                                                        cur.execute(f'Update Students_database set Badminton = "yes"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Badminton = "yes"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
 
                                                         TotalSum.append(p3p)
@@ -643,7 +662,7 @@ def outside_program():
 
                                                     else:
                                                         ''''''
-                                                        cur.execute(f'Update Students_database set Badminton = "no"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Badminton = "no"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         
                                                 def CRS():
@@ -651,14 +670,14 @@ def outside_program():
                                                     if brock == 1:
                                                         ''''''
                                                         
-                                                        cur.execute(f'Update Students_database set Carrom_Solo = "yes"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Carrom_Solo = "yes"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         TotalSum.append(p4p)
                                                         
 
                                                     else:
                                                         ''''''
-                                                        cur.execute(f'Update Students_database set Carrom_Solo = "no"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Carrom_Solo = "no"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         
                                                 def CRD():
@@ -666,14 +685,14 @@ def outside_program():
                                                     if brock == 1:
                                                         ''''''
                                                         
-                                                        cur.execute(f'Update Students_database set Carrom_Duo = "yes"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Carrom_Duo = "yes"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         TotalSum.append(p44p)
                                                         
 
                                                     else:
                                                         ''''''
-                                                        cur.execute(f'Update Students_database set Carrom_Duo = "no"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Carrom_Duo = "no"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         
                                                 def TT():
@@ -681,14 +700,14 @@ def outside_program():
                                                     if brock == 1:
                                                         ''''''
                                                         
-                                                        cur.execute(f'Update Students_database set Table_Tennis = "yes"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Table_Tennis = "yes"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         TotalSum.append(p5p)
                                                         
 
                                                     else:
                                                         ''''''
-                                                        cur.execute(f'Update Students_database set Table_Tennis = "no"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Table_Tennis = "no"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         
                                                 def CSS():
@@ -696,14 +715,14 @@ def outside_program():
                                                     if brock == 1:
                                                         ''''''
                                                         
-                                                        cur.execute(f'Update Students_database set Chess = "yes"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Chess = "yes"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         TotalSum.append(p6p)
                                                         
 
                                                     else:
                                                         ''''''
-                                                        cur.execute(f'Update Students_database set Chess = "no"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Chess = "no"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         
                                                 def CT5():
@@ -711,14 +730,14 @@ def outside_program():
                                                     if brock == 1:
                                                         ''''''
                                                         
-                                                        cur.execute(f'Update Students_database set Counter_Strike_Five_M = "yes"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Counter_Strike_Five_M = "yes"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         TotalSum.append(p7p)
                                                         
 
                                                     else:
                                                         ''''''
-                                                        cur.execute(f'Update Students_database set Counter_Strike_Five_M = "no"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Counter_Strike_Five_M = "no"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         
                                                 def CT3():
@@ -726,14 +745,14 @@ def outside_program():
                                                     if brock == 1:
                                                         ''''''
                                                        
-                                                        cur.execute(f'Update Students_database set Counter_Strike_Three_M = "yes"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Counter_Strike_Three_M = "yes"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         TotalSum.append(p77p)
                                                         
 
                                                     else:
                                                         ''''''
-                                                        cur.execute(f'Update Students_database set Counter_Strike_Three_M = "no"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Counter_Strike_Three_M = "no"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         
                                                 def PGS():
@@ -741,14 +760,14 @@ def outside_program():
                                                     if brock == 1:
                                                         ''''''
                                                         
-                                                        cur.execute(f'Update Students_database set Pubg_Solo = "yes"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Pubg_Solo = "yes"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         TotalSum.append(p8p)
                                                         
 
                                                     else:
                                                         ''''''
-                                                        cur.execute(f'Update Students_database set Pubg_Solo = "no"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Pubg_Solo = "no"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         
                                                 def PGD():
@@ -756,14 +775,14 @@ def outside_program():
                                                     if brock == 1:
                                                         ''''''
                                                         
-                                                        cur.execute(f'Update Students_database set Pubg_Squad = "yes"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Pubg_Squad = "yes"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         TotalSum.append(p88p)
                                                         
 
                                                     else:
                                                         ''''''
-                                                        cur.execute(f'Update Students_database set Pubg_Squad = "no"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Pubg_Squad = "no"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                        
                                                 def PGT():
@@ -771,14 +790,14 @@ def outside_program():
                                                     if brock == 1:
                                                         ''''''
                                                         
-                                                        cur.execute(f'Update Students_database set Pubg_TDM = "yes"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Pubg_TDM = "yes"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         TotalSum.append(p888p)
                                                         
 
                                                     else:
                                                         ''''''
-                                                        cur.execute(f'Update Students_database set Pubg_TDM = "no"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Pubg_TDM = "no"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         
                                                 def PGST():
@@ -786,14 +805,14 @@ def outside_program():
                                                     if brock == 1:
                                                         ''''''
                                                         
-                                                        cur.execute(f'Update Students_database set Pubg_Squad_TDM = "yes"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Pubg_Squad_TDM = "yes"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         TotalSum.append(p8888p)
                                                         
 
                                                     else:
                                                         ''''''
-                                                        cur.execute(f'Update Students_database set Pubg_Squad_TDM = "no"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Pubg_Squad_TDM = "no"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                       
                                                 def DCS():
@@ -801,14 +820,14 @@ def outside_program():
                                                     if brock == 1:
                                                         ''''''
                                                         
-                                                        cur.execute(f'Update Students_database set Dance_Solo = "yes"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Dance_Solo = "yes"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         TotalSum.append(p9p)
                                                         
 
                                                     else:
                                                         ''''''
-                                                        cur.execute(f'Update Students_database set Dance_Solo = "no"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Dance_Solo = "no"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         
                                                 def DSD():
@@ -816,14 +835,14 @@ def outside_program():
                                                     if brock == 1:
                                                         ''''''
                                                         
-                                                        cur.execute(f'Update Students_database set Dance_Group_Duo = "yes"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Dance_Group_Duo = "yes"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         TotalSum.append(p99p)
                                                         
 
                                                     else:
                                                         ''''''
-                                                        cur.execute(f'Update Students_database set Dance_Group_Duo = "no"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Dance_Group_Duo = "no"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         
                                                 def DSG():
@@ -831,14 +850,14 @@ def outside_program():
                                                     if brock == 1:
                                                         ''''''
                                                         
-                                                        cur.execute(f'Update Students_database set Dance_Group_Squad = "yes"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Dance_Group_Squad = "yes"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         TotalSum.append(p999p)
                                                         
 
                                                     else:
                                                         ''''''
-                                                        cur.execute(f'Update Students_database set Dance_Group_Squad = "no"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Dance_Group_Squad = "no"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         
                                                 def FF():
@@ -846,14 +865,14 @@ def outside_program():
                                                     if brock == 1:
                                                         ''''''
                                                         
-                                                        cur.execute(f'Update Students_database set Fifa = "yes"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Fifa = "yes"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         TotalSum.append(p10p)
                                                         
 
                                                     else:
                                                         ''''''
-                                                        cur.execute(f'Update Students_database set Fifa = "no"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Fifa = "no"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         
                                                 def SG():
@@ -861,14 +880,14 @@ def outside_program():
                                                     if brock == 1:
                                                         ''''''
                                                         
-                                                        cur.execute(f'Update Students_database set Singing = "yes"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Singing = "yes"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         TotalSum.append(p11p)
                                                         
 
                                                     else:
                                                         ''''''
-                                                        cur.execute(f'Update Students_database set Singing = "no"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Singing = "no"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         
                                                 def RP():
@@ -876,14 +895,14 @@ def outside_program():
                                                     if brock == 1:
                                                         ''''''
                                                         
-                                                        cur.execute(f'Update Students_database set Rapping = "yes"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Rapping = "yes"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         TotalSum.append(p12p)
                                                         
 
                                                     else:
                                                         ''''''
-                                                        cur.execute(f'Update Students_database set Rapping = "no"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Rapping = "no"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         
                                                 def BTBX():
@@ -891,14 +910,14 @@ def outside_program():
                                                     if brock == 1:
                                                         ''''''
                                                        
-                                                        cur.execute(f'Update Students_database set Beatboxing = "yes"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Beatboxing = "yes"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         TotalSum.append(p13p)
                                                         
 
                                                     else:
                                                         ''''''
-                                                        cur.execute(f'Update Students_database set Beatboxing = "no"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Beatboxing = "no"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         
                                                 def PGY():
@@ -906,14 +925,14 @@ def outside_program():
                                                     if brock == 1:
                                                         ''''''
                                                         
-                                                        cur.execute(f'Update Students_database set Photography = "yes"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Photography = "yes"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         TotalSum.append(p14p)
                                                         
 
                                                     else:
                                                         ''''''
-                                                        cur.execute(f'Update Students_database set Photography = "no"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Photography = "no"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         
                                                 def MDI():
@@ -921,7 +940,7 @@ def outside_program():
                                                     if brock == 1:
                                                         ''''''
                                                         
-                                                        cur.execute(f'Update Students_database set Mehndi = "yes"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Mehndi = "yes"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         TotalSum.append(p15p)
                                                         bj=sum(TotalSum)
@@ -929,7 +948,7 @@ def outside_program():
 
                                                     else:
                                                         ''''''
-                                                        cur.execute(f'Update Students_database set Mehndi = "no"  where Mobile_No="{oneplus}"  ')
+                                                        cur.execute(f'Update Students_database3 set Mehndi = "no"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                        
                                                 BC()
@@ -1138,11 +1157,11 @@ def outside_program():
             p15p=20
             y=430
             for idx, event in enumerate(eventslist):
-                print("event and index",event,idx)
+                eventVariable[idx]=IntVar()
                 y=y+20
-                eventscheck[idx]=Checkbutton(pikachu,variable=p15, text =event[0],font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+                eventsCheck[idx]=Checkbutton(pikachu,variable=eventVariable[idx], text =event[0],font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
                                takefocus = 0)
-                eventscheck[idx].place(x=800,y=y)
+                eventsCheck[idx].place(x=800,y=y)
             
 
             arceus=Button(pikachu,command=pokeball,state=NORMAL,activebackground="black",border=0,activeforeground="orange",text="Submit",fg='black',bg='orange',height=3,width=16)
@@ -1216,7 +1235,7 @@ def outside_program():
                 p014.place_forget()
                 p015.place_forget()
                 for idx, event in enumerate(eventslist):
-                    eventscheck[idx].place_forget()
+                    eventsCheck[idx].place_forget()
                 ''''''
                 zapados.place_forget()
             ash=os.getcwd()
@@ -2010,7 +2029,7 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Box_Cricket = "yes"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Box_Cricket = "yes"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             Ulist.append(p1p)
                                             
@@ -2035,12 +2054,13 @@ def outside_program():
                                             BTBX()
                                             PGY()
                                             MDI()
+                                            Elist()
                                             bj=sum(Ulist)
-                                            cur.execute(f'Update Students_database set totalammo = {bj} where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set totalammo = {bj} where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             showalldata()
                                             """ bj=sum(TotalSum)
-                                            cur.execute(f'Update Students_database set Totalammo = "{bj}"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Totalammo = "{bj}"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             dialga="Total Amount = RS."+str(bj) """
                                             """ MEGA_ARCEUS=Label(pikachu,text=dialga,width=30,bg='orange',fg='black',font=("Arial Black",50,"bold"))
@@ -2048,7 +2068,7 @@ def outside_program():
                                             ''''''
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Box_Cricket = "no"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Box_Cricket = "no"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             RF()
                                             BD()
@@ -2071,8 +2091,9 @@ def outside_program():
                                             BTBX()
                                             PGY()
                                             MDI()
+                                            Elist()
                                             bj=sum(Ulist)
-                                            cur.execute(f'Update Students_database set totalammo = {bj} where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set totalammo = {bj} where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             showalldata()
                                             
@@ -2082,14 +2103,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Rink_Football = "yes"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Rink_Football = "yes"  where Mobile_No="{oneplus}"  ')
                                             
                                             
                                             Ulist.append(p2p)
                                             
 
                                         else:
-                                            cur.execute(f'Update Students_database set Rink_Football = "no"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Rink_Football = "no"  where Mobile_No="{oneplus}"  ')
                                             ''''''
                                             
                                     def BD():
@@ -2097,7 +2118,7 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Badminton = "yes"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Badminton = "yes"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
 
                                             Ulist.append(p3p)
@@ -2105,7 +2126,7 @@ def outside_program():
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Badminton = "no"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Badminton = "no"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             
                                     def CRS():
@@ -2113,14 +2134,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Carrom_Solo = "yes"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Carrom_Solo = "yes"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             Ulist.append(p4p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Carrom_Solo = "no"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Carrom_Solo = "no"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             
                                     def CRD():
@@ -2128,14 +2149,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Carrom_Duo = "yes"  where Mobile_No="{oneplus}" ')
+                                            cur.execute(f'Update Students_database3 set Carrom_Duo = "yes"  where Mobile_No="{oneplus}" ')
                                             con.commit()
                                             Ulist.append(p44p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Carrom_Duo = "no"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Carrom_Duo = "no"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             
                                     def TT():
@@ -2143,14 +2164,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Table_Tennis = "yes" where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Table_Tennis = "yes" where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             Ulist.append(p5p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Table_Tennis = "no"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Table_Tennis = "no"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             
                                     def CSS():
@@ -2158,14 +2179,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Chess = "yes"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Chess = "yes"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             Ulist.append(p6p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Chess = "no"  where Mobile_No="{oneplus}" ')
+                                            cur.execute(f'Update Students_database3 set Chess = "no"  where Mobile_No="{oneplus}" ')
                                             con.commit()
                                             
                                     def CT5():
@@ -2173,14 +2194,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Counter_Strike_Five_M = "yes"  where Mobile_No="{oneplus}" ')
+                                            cur.execute(f'Update Students_database3 set Counter_Strike_Five_M = "yes"  where Mobile_No="{oneplus}" ')
                                             con.commit()
                                             Ulist.append(p7p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Counter_Strike_Five_M = "no"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Counter_Strike_Five_M = "no"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             
                                     def CT3():
@@ -2188,14 +2209,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Counter_Strike_Three_M = "yes"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Counter_Strike_Three_M = "yes"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             Ulist.append(p77p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Counter_Strike_Three_M = "no"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Counter_Strike_Three_M = "no"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             
                                     def PGS():
@@ -2203,14 +2224,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Pubg_Solo = "yes"  where Mobile_No="{oneplus}" ')
+                                            cur.execute(f'Update Students_database3 set Pubg_Solo = "yes"  where Mobile_No="{oneplus}" ')
                                             con.commit()
                                             Ulist.append(p8p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Pubg_Solo = "no"  where Mobile_No="{oneplus}" ')
+                                            cur.execute(f'Update Students_database3 set Pubg_Solo = "no"  where Mobile_No="{oneplus}" ')
                                             con.commit()
                                             
                                     def PGD():
@@ -2218,14 +2239,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Pubg_Squad = "yes"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Pubg_Squad = "yes"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             Ulist.append(p88p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Pubg_Squad = "no"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Pubg_Squad = "no"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             
                                     def PGT():
@@ -2233,14 +2254,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Pubg_TDM = "yes"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Pubg_TDM = "yes"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             Ulist.append(p888p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Pubg_TDM = "no"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Pubg_TDM = "no"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             
                                     def PGST():
@@ -2248,14 +2269,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Pubg_Squad_TDM = "yes"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Pubg_Squad_TDM = "yes"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             Ulist.append(p8888p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Pubg_Squad_TDM = "no"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Pubg_Squad_TDM = "no"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             
                                     def DCS():
@@ -2263,14 +2284,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Dance_Solo = "yes"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Dance_Solo = "yes"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             Ulist.append(p9p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Dance_Solo = "no"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Dance_Solo = "no"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             
                                     def DSD():
@@ -2278,14 +2299,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Dance_Group_Duo = "yes"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Dance_Group_Duo = "yes"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             Ulist.append(p99p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Dance_Group_Duo = "no"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Dance_Group_Duo = "no"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             
                                     def DSG():
@@ -2293,14 +2314,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Dance_Group_Squad = "yes"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Dance_Group_Squad = "yes"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             Ulist.append(p999p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Dance_Group_Squad = "no"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Dance_Group_Squad = "no"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             
                                     def FF():
@@ -2308,14 +2329,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Fifa = "yes"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Fifa = "yes"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             Ulist.append(p10p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Fifa = "no"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Fifa = "no"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             
                                     def SG():
@@ -2323,14 +2344,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Singing = "yes"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Singing = "yes"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             Ulist.append(p11p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Singing = "no"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Singing = "no"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             
                                     def RP():
@@ -2338,14 +2359,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Rapping = "yes"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Rapping = "yes"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             Ulist.append(p12p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Rapping = "no"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Rapping = "no"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             
                                     def BTBX():
@@ -2353,14 +2374,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Beatboxing = "yes" where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Beatboxing = "yes" where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             Ulist.append(p13p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Beatboxing = "no"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Beatboxing = "no"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             
                                     def PGY():
@@ -2368,14 +2389,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Photography = "yes"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Photography = "yes"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             Ulist.append(p14p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Photography = "no"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Photography = "no"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             
                                     def MDI():
@@ -2383,7 +2404,7 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Mehndi = "yes"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Mehndi = "yes"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             Ulist.append(p15p)
 
@@ -2393,9 +2414,26 @@ def outside_program():
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Mehndi = "no"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Mehndi = "no"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
+                                    def Elist():
+                                        for idx,event in enumerate(eventslist):
+                                            brock=eventsCheck[idx].get()  
+
+                                            if brock == 1:
+                                                ''''''
+                                                
+                                                cur.execute(f'Update Students_database3 set {event[0]} = "yes"  where Mobile_No="{oneplus}"  ')
+                                                
+                                                print(event)
+                                                Ulist.append(event[1])
+
+                                                
+
+                                            else:
+                                                cur.execute(f'Update Students_database3 set {event[0]} = "no"  where Mobile_No="{oneplus}"  ')
                                         showalldata()
+
                                         
                                         p1.set(0)
                                         p2.set(0)
@@ -2507,7 +2545,7 @@ def outside_program():
                         CLG=CLG.upper()
                         oneplus=megapikachu6z.get()
                         MF=__MOF__ .get()
-                        cur.execute(f'update  Students_database set fName="{fnames}",lName="{lnames}",STD="{std}",Email_ID="{deadspy_email}",College_Name="{CLG}",Gender="{MF}" where Mobile_No="{oneplus}"')
+                        cur.execute(f'update  Students_database3 set fName="{fnames}",lName="{lnames}",STD="{std}",Email_ID="{deadspy_email}",College_Name="{CLG}",Gender="{MF}" where Mobile_No="{oneplus}"')
                         
                         showalldata()
                         
@@ -2517,7 +2555,7 @@ def outside_program():
                         oneplus=megapikachu6z.get()
                         
                         
-                        cur.execute(f'Delete From Students_database where Mobile_No="{oneplus}"')
+                        cur.execute(f'Delete From Students_database3 where Mobile_No="{oneplus}"')
                         con.commit()
                         for i in preeti.get_children():
                             preeti.delete(i)
@@ -2587,7 +2625,7 @@ def outside_program():
                         
                         
                         ''''''
-                        cur.execute("Select * From Students_database")
+                        cur.execute("Select * From Students_database3")
                         rows=cur.fetchall()
                         if len(rows)!=0:
                             preeti.delete(*preeti.get_children())
@@ -2608,7 +2646,7 @@ def outside_program():
                         shm=str(nobody_ei.get())
 
                         try:
-                            cur.execute(f'SELECT * FROM Students_database WHERE {shm} = "yes"  ;')
+                            cur.execute(f'SELECT * FROM Students_database3 WHERE {shm} = "yes"  ;')
                             rows=cur.fetchall()
                             if len(rows)!=0:
                                 preeti.delete(*preeti.get_children())
@@ -2641,7 +2679,7 @@ def outside_program():
                     prashant_S.place(x=580,y=3)
                     def pdfdn():
                         ''''''
-                        syntax="select * from Students_database"
+                        syntax="select * from Students_database3"
                         cur.execute(syntax)
                         with open("vibes_offline_data_text.csv","w") as d:
                             writer = csv.writer(d, quoting=csv.QUOTE_NONNUMERIC)
@@ -3193,7 +3231,7 @@ def outside_program():
                                         btbx()
                                         pgy()
                                         mdi()
-
+                                        
                                         
 
                                         
@@ -3411,7 +3449,7 @@ def outside_program():
                                         
                                     else:
                                         p15.set(0)
-                                        
+                                     
                                         
                                 def Eupdate():
                                     
@@ -3423,7 +3461,7 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Box_Cricket = "yes"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Box_Cricket = "yes"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             Ulist.append(p1p)
                                             
@@ -3449,11 +3487,11 @@ def outside_program():
                                             PGY()
                                             MDI()
                                             bj=sum(Ulist)
-                                            cur.execute(f'Update Students_database set totalammo = {bj} where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set totalammo = {bj} where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             showalldata()
                                             """ bj=sum(TotalSum)
-                                            cur.execute(f'Update Students_database set Totalammo = "{bj}"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Totalammo = "{bj}"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             dialga="Total Amount = RS."+str(bj) """
                                             """ MEGA_ARCEUS=Label(pikachu,text=dialga,width=30,bg='orange',fg='black',font=("Arial Black",50,"bold"))
@@ -3461,7 +3499,7 @@ def outside_program():
                                             ''''''
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Box_Cricket = "no"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Box_Cricket = "no"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             RF()
                                             BD()
@@ -3485,7 +3523,7 @@ def outside_program():
                                             PGY()
                                             MDI()
                                             bj=sum(Ulist)
-                                            cur.execute(f'Update Students_database set totalammo = {bj} where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set totalammo = {bj} where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             showalldata()
                                             
@@ -3495,14 +3533,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Rink_Football = "yes"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Rink_Football = "yes"  where Mobile_No="{oneplus}"  ')
                                             
                                             
                                             Ulist.append(p2p)
                                             
 
                                         else:
-                                            cur.execute(f'Update Students_database set Rink_Football = "no"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Rink_Football = "no"  where Mobile_No="{oneplus}"  ')
                                             ''''''
                                             
                                     def BD():
@@ -3510,7 +3548,7 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Badminton = "yes"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Badminton = "yes"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
 
                                             Ulist.append(p3p)
@@ -3518,7 +3556,7 @@ def outside_program():
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Badminton = "no"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Badminton = "no"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             
                                     def CRS():
@@ -3526,14 +3564,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Carrom_Solo = "yes"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Carrom_Solo = "yes"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             Ulist.append(p4p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Carrom_Solo = "no"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Carrom_Solo = "no"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             
                                     def CRD():
@@ -3541,14 +3579,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Carrom_Duo = "yes"  where Mobile_No="{oneplus}" ')
+                                            cur.execute(f'Update Students_database3 set Carrom_Duo = "yes"  where Mobile_No="{oneplus}" ')
                                             con.commit()
                                             Ulist.append(p44p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Carrom_Duo = "no"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Carrom_Duo = "no"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             
                                     def TT():
@@ -3556,14 +3594,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Table_Tennis = "yes" where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Table_Tennis = "yes" where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             Ulist.append(p5p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Table_Tennis = "no"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Table_Tennis = "no"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             
                                     def CSS():
@@ -3571,14 +3609,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Chess = "yes"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Chess = "yes"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             Ulist.append(p6p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Chess = "no"  where Mobile_No="{oneplus}" ')
+                                            cur.execute(f'Update Students_database3 set Chess = "no"  where Mobile_No="{oneplus}" ')
                                             con.commit()
                                             
                                     def CT5():
@@ -3586,14 +3624,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Counter_Strike_Five_M = "yes"  where Mobile_No="{oneplus}" ')
+                                            cur.execute(f'Update Students_database3 set Counter_Strike_Five_M = "yes"  where Mobile_No="{oneplus}" ')
                                             con.commit()
                                             Ulist.append(p7p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Counter_Strike_Five_M = "no"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Counter_Strike_Five_M = "no"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             
                                     def CT3():
@@ -3601,14 +3639,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Counter_Strike_Three_M = "yes"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Counter_Strike_Three_M = "yes"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             Ulist.append(p77p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Counter_Strike_Three_M = "no"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Counter_Strike_Three_M = "no"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             
                                     def PGS():
@@ -3616,14 +3654,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Pubg_Solo = "yes"  where Mobile_No="{oneplus}" ')
+                                            cur.execute(f'Update Students_database3 set Pubg_Solo = "yes"  where Mobile_No="{oneplus}" ')
                                             con.commit()
                                             Ulist.append(p8p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Pubg_Solo = "no"  where Mobile_No="{oneplus}" ')
+                                            cur.execute(f'Update Students_database3 set Pubg_Solo = "no"  where Mobile_No="{oneplus}" ')
                                             con.commit()
                                             
                                     def PGD():
@@ -3631,14 +3669,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Pubg_Squad = "yes"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Pubg_Squad = "yes"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             Ulist.append(p88p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Pubg_Squad = "no"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Pubg_Squad = "no"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             
                                     def PGT():
@@ -3646,14 +3684,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Pubg_TDM = "yes"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Pubg_TDM = "yes"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             Ulist.append(p888p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Pubg_TDM = "no"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Pubg_TDM = "no"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             
                                     def PGST():
@@ -3661,14 +3699,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Pubg_Squad_TDM = "yes"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Pubg_Squad_TDM = "yes"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             Ulist.append(p8888p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Pubg_Squad_TDM = "no"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Pubg_Squad_TDM = "no"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             
                                     def DCS():
@@ -3676,14 +3714,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Dance_Solo = "yes"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Dance_Solo = "yes"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             Ulist.append(p9p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Dance_Solo = "no"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Dance_Solo = "no"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             
                                     def DSD():
@@ -3691,14 +3729,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Dance_Group_Duo = "yes"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Dance_Group_Duo = "yes"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             Ulist.append(p99p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Dance_Group_Duo = "no"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Dance_Group_Duo = "no"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             
                                     def DSG():
@@ -3706,14 +3744,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Dance_Group_Squad = "yes"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Dance_Group_Squad = "yes"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             Ulist.append(p999p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Dance_Group_Squad = "no"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Dance_Group_Squad = "no"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             
                                     def FF():
@@ -3721,14 +3759,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Fifa = "yes"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Fifa = "yes"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             Ulist.append(p10p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Fifa = "no"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Fifa = "no"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             
                                     def SG():
@@ -3736,14 +3774,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Singing = "yes"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Singing = "yes"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             Ulist.append(p11p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Singing = "no"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Singing = "no"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             
                                     def RP():
@@ -3751,14 +3789,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Rapping = "yes"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Rapping = "yes"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             Ulist.append(p12p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Rapping = "no"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Rapping = "no"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             
                                     def BTBX():
@@ -3766,14 +3804,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Beatboxing = "yes" where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Beatboxing = "yes" where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             Ulist.append(p13p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Beatboxing = "no"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Beatboxing = "no"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             
                                     def PGY():
@@ -3781,14 +3819,14 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Photography = "yes"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Photography = "yes"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             Ulist.append(p14p)
                                             
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Photography = "no"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Photography = "no"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                             
                                     def MDI():
@@ -3796,7 +3834,7 @@ def outside_program():
                                         if brock == 1:
                                             ''''''
                                             
-                                            cur.execute(f'Update Students_database set Mehndi = "yes"  where Mobile_No="{oneplus}"   ')
+                                            cur.execute(f'Update Students_database3 set Mehndi = "yes"  where Mobile_No="{oneplus}"   ')
                                             con.commit()
                                             Ulist.append(p15p)
 
@@ -3806,7 +3844,7 @@ def outside_program():
 
                                         else:
                                             ''''''
-                                            cur.execute(f'Update Students_database set Mehndi = "no"  where Mobile_No="{oneplus}"  ')
+                                            cur.execute(f'Update Students_database3 set Mehndi = "no"  where Mobile_No="{oneplus}"  ')
                                             con.commit()
                                         showalldata()
                                         
@@ -3910,10 +3948,10 @@ def outside_program():
                         ename=megapikachuz.get()
                         print(ename)
                         fee=megapikachu6z.get()
-                        Participants =megapikachu3z.get()
+                        Participants=megapikachu3z.get()
                         print(3897)
-                        print(cur.execute("ALTER TABLE Students_database ADD "+ename+" varchar(6)"))
-                        print(cur.execute(f'INSERT INTO New_Events_list (EventName,Fee,Participants) values ("{ename}","{fee}","{Participants}")'))
+                        print(cur.execute("ALTER TABLE Students_database3 ADD "+ename+" varchar(6) DEFAULT ''"))
+                        print(cur.execute(f'INSERT INTO New_Events_list3 (EventName,Fee,Participants) values ("{ename}","{fee}","{Participants}")'))
                         
 
                         for event in eventslist:
@@ -3932,7 +3970,7 @@ def outside_program():
                         oneplus=megapikachu6z.get()
                         
                         
-                        cur.execute(f'Delete From Students_database where Mobile_No="{oneplus}"')
+                        cur.execute(f'Delete From Students_database3 where Mobile_No="{oneplus}"')
                         con.commit()
                         for i in preeti.get_children():
                             preeti.delete(i)
