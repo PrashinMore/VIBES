@@ -188,6 +188,7 @@ def outside_program():
                                                         cur.execute(f'Update Students_database3 set Totalammo = "{bj}"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         dialga="Total Amount = RS."+str(bj)
+                                                        print("total amount 2")
                                                         MEGA_ARCEUS=Label(pikachu,text=dialga,width=30,bg='blue',fg='yellow',font=("Times",50,"bold"))
                                                         MEGA_ARCEUS.place(x=0,y=360)
 
@@ -412,12 +413,13 @@ def outside_program():
                                                         BTBX()
                                                         PGY()
                                                         MDI()
+                                                        Elist()
                                                         pl7.place_forget()
                                                         bj=sum(TotalSum)
 
                                                         cur.execute(f'Update Students_database3 set Totalammo = "{bj}"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
-                                                        
+                                                        print("total amount1")
                                                         dialga="Total Amount = RS."+str(bj)
                                                         def hommming2():
                                                             ''''''
@@ -632,7 +634,7 @@ def outside_program():
                                                         
                                                 def Elist():
                                                     for idx,event in enumerate(eventslist):
-                                                        brock=eventsCheck[idx].get()  
+                                                        brock=eventVariable[idx].get()  
 
                                                         if brock == 1:
                                                             ''''''
@@ -2660,7 +2662,14 @@ def outside_program():
                     python_select=ttk.Combobox(ved,style='ARD.TCombobox',textvariable=nobody_ei,width=18,font=("Arial Black",17,"bold"),state='readonly')
                     
                     python_select.set('SELECT EVENT')
-                    python_select['values']=('Box_Cricket','Rink_Football','Badminton','Carrom_Solo','Carrom_Duo','Table_Tennis','Chess','Counter_Strike_Five_M','Counter_Strike_Three_M','Pubg_Solo','Pubg_Squad','Pubg_TDM','Pubg_Squad_TDM','Dance_Solo','Dance_Group_Duo','Dance_Group_Squad','Fifa','Singing','Rapping','Beatboxing','Photography','Mehndi')
+                    ogTuple = ('Box_Cricket','Rink_Football','Badminton','Carrom_Solo','Carrom_Duo','Table_Tennis','Chess','Counter_Strike_Five_M','Counter_Strike_Three_M','Pubg_Solo','Pubg_Squad','Pubg_TDM','Pubg_Squad_TDM','Dance_Solo','Dance_Group_Duo','Dance_Group_Squad','Fifa','Singing','Rapping','Beatboxing','Photography','Mehndi')
+                    converted = list(ogTuple)
+                    for idx, event in enumerate(eventslist):
+                        converted.append(event[0])
+                    convertedTuple = tuple(converted)
+                    print("this is converted tuple", convertedTuple)
+                    python_select['values']=convertedTuple
+                    
                     python_select.place(x=170,y=25)
                     
                     python_select.insert(0, "")
