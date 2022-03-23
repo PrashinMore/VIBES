@@ -1061,109 +1061,109 @@ def outside_program():
                 
             
             
-            p01=Checkbutton(pikachu,variable=p1, text ='BOX CRICKET',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                               takefocus = 0)
-            p01.place(x = 800, y = 150)
+            # p01=Checkbutton(pikachu,variable=p1, text ='BOX CRICKET',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+            #                    takefocus = 0)
+            # p01.place(x = 800, y = 150)
             
-            p1p=550
-            p02=Checkbutton(pikachu,variable=p2, text ='RINK FOOTBALL',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                               takefocus = 0)
-            p02.place(x = 800, y = 170) 
-            p2p=450
-            p03=Checkbutton(pikachu,variable=p3, text ='BADMINTON',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                               takefocus = 0)
-            p03.place(x = 800, y = 190) 
-            p3p=50
-            pl4 = Label(pikachu, text ='CARROM',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1 )
-            pl4.place(x = 820, y = 210) 
-            p04=Checkbutton(pikachu,variable=p4, text ='Solo',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                               takefocus = 0)
-            p04.place(x = 960, y = 210) 
-            p4p=50
-            p044=Checkbutton(pikachu,variable=p44, text ='Duo',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                               takefocus = 0)
-            p044.place(x = 1020, y = 210) 
-            p44p=100
-            p05=Checkbutton(pikachu,variable=p5, text ='TABLE TENNIS',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                               takefocus = 0)
-            p05.place(x = 800, y = 230) 
-            p5p=50
+            # p1p=550
+            # p02=Checkbutton(pikachu,variable=p2, text ='RINK FOOTBALL',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+            #                    takefocus = 0)
+            # p02.place(x = 800, y = 170) 
+            # p2p=450
+            # p03=Checkbutton(pikachu,variable=p3, text ='BADMINTON',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+            #                    takefocus = 0)
+            # p03.place(x = 800, y = 190) 
+            # p3p=50
+            # pl4 = Label(pikachu, text ='CARROM',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1 )
+            # pl4.place(x = 820, y = 210) 
+            # p04=Checkbutton(pikachu,variable=p4, text ='Solo',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+            #                    takefocus = 0)
+            # p04.place(x = 960, y = 210) 
+            # p4p=50
+            # p044=Checkbutton(pikachu,variable=p44, text ='Duo',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+            #                    takefocus = 0)
+            # p044.place(x = 1020, y = 210) 
+            # p44p=100
+            # p05=Checkbutton(pikachu,variable=p5, text ='TABLE TENNIS',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+            #                    takefocus = 0)
+            # p05.place(x = 800, y = 230) 
+            # p5p=50
 
 
-            p06=Checkbutton(pikachu,variable=p6, text ='CHESS',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                               takefocus = 0)
-            p06.place(x = 800, y = 250) 
-            p6p=50
-            pl7 = Label(pikachu, text ='COUNTER STRIKE',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1 )
-            pl7.place(x = 820, y = 270) 
-            p07=Checkbutton(pikachu,variable=p7, text ='5(S)',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                               takefocus = 0)
-            p07.place(x = 960, y = 270) 
-            p7p=250
-            p077=Checkbutton(pikachu,variable=p77, text ='3(S)',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                               takefocus = 0)
-            p077.place(x = 1020, y = 270) 
-            p77p=150
+            # p06=Checkbutton(pikachu,variable=p6, text ='CHESS',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+            #                    takefocus = 0)
+            # p06.place(x = 800, y = 250) 
+            # p6p=50
+            # pl7 = Label(pikachu, text ='COUNTER STRIKE',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1 )
+            # pl7.place(x = 820, y = 270) 
+            # p07=Checkbutton(pikachu,variable=p7, text ='5(S)',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+            #                    takefocus = 0)
+            # p07.place(x = 960, y = 270) 
+            # p7p=250
+            # p077=Checkbutton(pikachu,variable=p77, text ='3(S)',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+            #                    takefocus = 0)
+            # p077.place(x = 1020, y = 270) 
+            # p77p=150
 
-            pl8 = Label(pikachu, text ='PUBG MOBILE',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1 )
-            pl8.place(x = 820, y = 290) 
+            # pl8 = Label(pikachu, text ='PUBG MOBILE',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1 )
+            # pl8.place(x = 820, y = 290) 
                               
-            p08=Checkbutton(pikachu,variable=p8, text ='Solo',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                               takefocus = 0)
-            p08.place(x = 960, y = 290) 
-            p8p=50
-            p088=Checkbutton(pikachu,variable=p88, text ='Squad',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                               takefocus = 0)
-            p088.place(x = 1020, y = 290) 
-            p88p=200
-            p0888=Checkbutton(pikachu,variable=p888, text ='TDM',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                               takefocus = 0)
-            p0888.place(x = 1100, y = 290) 
-            p888p=200
-            p08888=Checkbutton(pikachu,variable=p8888, text ='Squad + TDM',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                               takefocus = 0)
-            p08888.place(x = 1170, y = 290) 
-            p8888p=320
-            pl9 = Label(pikachu, text ='DANCE',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1 )
-            pl9.place(x = 820, y = 310) 
-            p09=Checkbutton(pikachu,variable=p9, text ='Solo',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                               takefocus = 0)
-            p09.place(x = 960, y = 310) 
-            p9p=100
-            p099=Checkbutton(pikachu,variable=p99, text ='Duo',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                               takefocus = 0)
-            p099.place(x = 1020, y = 310) 
-            p99p=200
-            p0999=Checkbutton(pikachu,variable=p999, text ='Group',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                               takefocus = 0)
-            p0999.place(x = 1100, y = 310) 
+            # p08=Checkbutton(pikachu,variable=p8, text ='Solo',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+            #                    takefocus = 0)
+            # p08.place(x = 960, y = 290) 
+            # p8p=50
+            # p088=Checkbutton(pikachu,variable=p88, text ='Squad',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+            #                    takefocus = 0)
+            # p088.place(x = 1020, y = 290) 
+            # p88p=200
+            # p0888=Checkbutton(pikachu,variable=p888, text ='TDM',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+            #                    takefocus = 0)
+            # p0888.place(x = 1100, y = 290) 
+            # p888p=200
+            # p08888=Checkbutton(pikachu,variable=p8888, text ='Squad + TDM',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+            #                    takefocus = 0)
+            # p08888.place(x = 1170, y = 290) 
+            # p8888p=320
+            # pl9 = Label(pikachu, text ='DANCE',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1 )
+            # pl9.place(x = 820, y = 310) 
+            # p09=Checkbutton(pikachu,variable=p9, text ='Solo',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+            #                    takefocus = 0)
+            # p09.place(x = 960, y = 310) 
+            # p9p=100
+            # p099=Checkbutton(pikachu,variable=p99, text ='Duo',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+            #                    takefocus = 0)
+            # p099.place(x = 1020, y = 310) 
+            # p99p=200
+            # p0999=Checkbutton(pikachu,variable=p999, text ='Group',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+            #                    takefocus = 0)
+            # p0999.place(x = 1100, y = 310) 
             
-            p999p=400
-            p010=Checkbutton(pikachu,variable=p10, text ='FIFA',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                               takefocus = 0)
-            p010.place(x = 800, y = 330) 
-            p10p=50
-            p011=Checkbutton(pikachu,variable=p11, text ='SINGING',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                               takefocus = 0)
-            p011.place(x = 800, y = 350) 
-            p11p=100
-            p012=Checkbutton(pikachu,variable=p12, text ='RAPPING',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                               takefocus = 0)
-            p012.place(x = 800, y = 370) 
-            p12p=100
-            p013=Checkbutton(pikachu,variable=p13, text ='BEATBOXING',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                               takefocus = 0)
-            p013.place(x = 800, y = 390) 
-            p13p=100
-            p014=Checkbutton(pikachu,variable=p14, text ='PHOTOGRAPHY',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                               takefocus = 0)
-            p014.place(x = 800, y = 410) 
-            p14p=50
-            p015=Checkbutton(pikachu,variable=p15, text ='MEHNDI',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                               takefocus = 0)
-            p015.place(x = 800, y = 430) 
-            p15p=20
-            y=430
+            # p999p=400
+            # p010=Checkbutton(pikachu,variable=p10, text ='FIFA',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+            #                    takefocus = 0)
+            # p010.place(x = 800, y = 330) 
+            # p10p=50
+            # p011=Checkbutton(pikachu,variable=p11, text ='SINGING',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+            #                    takefocus = 0)
+            # p011.place(x = 800, y = 350) 
+            # p11p=100
+            # p012=Checkbutton(pikachu,variable=p12, text ='RAPPING',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+            #                    takefocus = 0)
+            # p012.place(x = 800, y = 370) 
+            # p12p=100
+            # p013=Checkbutton(pikachu,variable=p13, text ='BEATBOXING',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+            #                    takefocus = 0)
+            # p013.place(x = 800, y = 390) 
+            # p13p=100
+            # p014=Checkbutton(pikachu,variable=p14, text ='PHOTOGRAPHY',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+            #                    takefocus = 0)
+            # p014.place(x = 800, y = 410) 
+            # p14p=50
+            # p015=Checkbutton(pikachu,variable=p15, text ='MEHNDI',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+            #                    takefocus = 0)
+            # p015.place(x = 800, y = 430) 
+            # p15p=20
+            y=130
             for idx, event in enumerate(eventslist):
                 eventVariable[idx]=IntVar()
                 y=y+20
@@ -1180,10 +1180,10 @@ def outside_program():
                 
                 arceus.configure(state=NORMAL)
                 ll1.place_forget()
-                pl9.place_forget()
-                pl8.place_forget()
-                pl7.place_forget()
-                pl4.place_forget()
+                # pl9.place_forget()
+                # pl8.place_forget()
+                # pl7.place_forget()
+                # pl4.place_forget()
                 Admin_label.place(x=494,y=690)
                 Remove_label.place(x=880,y=470)
                 Exit_label.place(x=756,y=690)
@@ -1222,28 +1222,28 @@ def outside_program():
                 reg_button.place(x=480,y=90)
 
                 ''''''
-                p01.place_forget()
-                p02.place_forget()
-                p03.place_forget()
-                p04.place_forget()
-                p044.place_forget()
-                p05.place_forget()
-                p06.place_forget()
-                p07.place_forget()
-                p077.place_forget()
-                p08.place_forget()
-                p088.place_forget()
-                p0888.place_forget()
-                p08888.place_forget()
-                p09.place_forget()
-                p099.place_forget()
-                p0999.place_forget()
-                p010.place_forget()
-                p011.place_forget()
-                p012.place_forget() 
-                p013.place_forget()
-                p014.place_forget()
-                p015.place_forget()
+                # p01.place_forget()
+                # p02.place_forget()
+                # p03.place_forget()
+                # p04.place_forget()
+                # p044.place_forget()
+                # p05.place_forget()
+                # p06.place_forget()
+                # p07.place_forget()
+                # p077.place_forget()
+                # p08.place_forget()
+                # p088.place_forget()
+                # p0888.place_forget()
+                # p08888.place_forget()
+                # p09.place_forget()
+                # p099.place_forget()
+                # p0999.place_forget()
+                # p010.place_forget()
+                # p011.place_forget()
+                # p012.place_forget() 
+                # p013.place_forget()
+                # p014.place_forget()
+                # p015.place_forget()
                 for idx, event in enumerate(eventslist):
                     eventsCheck[idx].place_forget()
                 ''''''
@@ -2680,8 +2680,9 @@ def outside_program():
                     python_select=ttk.Combobox(ved,style='ARD.TCombobox',textvariable=nobody_ei,width=18,font=("Arial Black",17,"bold"),state='readonly')
                     
                     python_select.set('SELECT EVENT')
-                    ogTuple = ('Box_Cricket','Rink_Football','Badminton','Carrom_Solo','Carrom_Duo','Table_Tennis','Chess','Counter_Strike_Five_M','Counter_Strike_Three_M','Pubg_Solo','Pubg_Squad','Pubg_TDM','Pubg_Squad_TDM','Dance_Solo','Dance_Group_Duo','Dance_Group_Squad','Fifa','Singing','Rapping','Beatboxing','Photography','Mehndi')
-                    converted = list(ogTuple)
+                    # ogTuple = ('Box_Cricket','Rink_Football','Badminton','Carrom_Solo','Carrom_Duo','Table_Tennis','Chess','Counter_Strike_Five_M','Counter_Strike_Three_M','Pubg_Solo','Pubg_Squad','Pubg_TDM','Pubg_Squad_TDM','Dance_Solo','Dance_Group_Duo','Dance_Group_Squad','Fifa','Singing','Rapping','Beatboxing','Photography','Mehndi')
+                    tupleTuple = ()
+                    converted = list(tupleTuple)
                     for idx, event in enumerate(eventslist):
                         converted.append(event[0])
                     convertedTuple = tuple(converted)
@@ -2998,11 +2999,10 @@ def outside_program():
                             if brock == 1:
                                 ''''''
                                 
-                                cur.execute(f'Update Students_database3 set Box_Cricket = "yes"  where Mobile_No="{oneplus}"  ')
+                                cur.execute(f'delete from New_Events_list3 where EventName="khokho"')
                                 con.commit()
                                 #dead=cur.execute("select * from Students_database3;")
                                 
-                                TotalSum.append(p1p)
                                 
                                 RF()
                                 BD()
@@ -3027,7 +3027,6 @@ def outside_program():
                                 MDI()
                                 Elist()
                                 
-                                bj=sum(TotalSum)
                                 cur.execute(f'Update Students_database3 set Totalammo = "{bj}"  where Mobile_No="{oneplus}"  ')
                                 con.commit()
                                 dialga="Total Amount = RS."+str(bj)
@@ -3707,109 +3706,109 @@ def outside_program():
                     p99=IntVar()
                     p999=IntVar()                                                                                
                     
-                    p01=Checkbutton(pikachu,variable=p1, text ='BOX CRICKET',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                                    takefocus = 0)
-                    p01.place(x = 800, y = 150)
+                    # p01=Checkbutton(pikachu,variable=p1, text ='BOX CRICKET',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+                    #                 takefocus = 0)
+                    # p01.place(x = 800, y = 150)
                     
-                    p1p=550
-                    p02=Checkbutton(pikachu,variable=p2, text ='RINK FOOTBALL',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                                    takefocus = 0)
-                    p02.place(x = 800, y = 170) 
-                    p2p=450
-                    p03=Checkbutton(pikachu,variable=p3, text ='BADMINTON',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                                    takefocus = 0)
-                    p03.place(x = 800, y = 190) 
-                    p3p=50
-                    pl4 = Label(pikachu, text ='CARROM',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1 )
-                    pl4.place(x = 820, y = 210) 
-                    p04=Checkbutton(pikachu,variable=p4, text ='Solo',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                                    takefocus = 0)
-                    p04.place(x = 960, y = 210) 
-                    p4p=50
-                    p044=Checkbutton(pikachu,variable=p44, text ='Duo',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                                    takefocus = 0)
-                    p044.place(x = 1020, y = 210) 
-                    p44p=100
-                    p05=Checkbutton(pikachu,variable=p5, text ='TABLE TENNIS',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                                    takefocus = 0)
-                    p05.place(x = 800, y = 230) 
-                    p5p=50
+                    # p1p=550
+                    # p02=Checkbutton(pikachu,variable=p2, text ='RINK FOOTBALL',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+                    #                 takefocus = 0)
+                    # p02.place(x = 800, y = 170) 
+                    # p2p=450
+                    # p03=Checkbutton(pikachu,variable=p3, text ='BADMINTON',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+                    #                 takefocus = 0)
+                    # p03.place(x = 800, y = 190) 
+                    # p3p=50
+                    # pl4 = Label(pikachu, text ='CARROM',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1 )
+                    # pl4.place(x = 820, y = 210) 
+                    # p04=Checkbutton(pikachu,variable=p4, text ='Solo',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+                    #                 takefocus = 0)
+                    # p04.place(x = 960, y = 210) 
+                    # p4p=50
+                    # p044=Checkbutton(pikachu,variable=p44, text ='Duo',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+                    #                 takefocus = 0)
+                    # p044.place(x = 1020, y = 210) 
+                    # p44p=100
+                    # p05=Checkbutton(pikachu,variable=p5, text ='TABLE TENNIS',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+                    #                 takefocus = 0)
+                    # p05.place(x = 800, y = 230) 
+                    # p5p=50
 
 
-                    p06=Checkbutton(pikachu,variable=p6, text ='CHESS',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                                    takefocus = 0)
-                    p06.place(x = 800, y = 250) 
-                    p6p=50
-                    pl7 = Label(pikachu, text ='COUNTER STRIKE',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1 )
-                    pl7.place(x = 820, y = 270) 
-                    p07=Checkbutton(pikachu,variable=p7, text ='5(S)',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                                    takefocus = 0)
-                    p07.place(x = 960, y = 270) 
-                    p7p=250
-                    p077=Checkbutton(pikachu,variable=p77, text ='3(S)',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                                    takefocus = 0)
-                    p077.place(x = 1020, y = 270) 
-                    p77p=150
+                    # p06=Checkbutton(pikachu,variable=p6, text ='CHESS',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+                    #                 takefocus = 0)
+                    # p06.place(x = 800, y = 250) 
+                    # p6p=50
+                    # pl7 = Label(pikachu, text ='COUNTER STRIKE',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1 )
+                    # pl7.place(x = 820, y = 270) 
+                    # p07=Checkbutton(pikachu,variable=p7, text ='5(S)',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+                    #                 takefocus = 0)
+                    # p07.place(x = 960, y = 270) 
+                    # p7p=250
+                    # p077=Checkbutton(pikachu,variable=p77, text ='3(S)',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+                    #                 takefocus = 0)
+                    # p077.place(x = 1020, y = 270) 
+                    # p77p=150
 
-                    pl8 = Label(pikachu, text ='PUBG MOBILE',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1 )
-                    pl8.place(x = 820, y = 290) 
+                    # pl8 = Label(pikachu, text ='PUBG MOBILE',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1 )
+                    # pl8.place(x = 820, y = 290) 
                                     
-                    p08=Checkbutton(pikachu,variable=p8, text ='Solo',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                                    takefocus = 0)
-                    p08.place(x = 960, y = 290) 
-                    p8p=50
-                    p088=Checkbutton(pikachu,variable=p88, text ='Squad',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                                    takefocus = 0)
-                    p088.place(x = 1020, y = 290) 
-                    p88p=200
-                    p0888=Checkbutton(pikachu,variable=p888, text ='TDM',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                                    takefocus = 0)
-                    p0888.place(x = 1100, y = 290) 
-                    p888p=200
-                    p08888=Checkbutton(pikachu,variable=p8888, text ='Squad + TDM',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                                    takefocus = 0)
-                    p08888.place(x = 1170, y = 290) 
-                    p8888p=320
-                    pl9 = Label(pikachu, text ='DANCE',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1 )
-                    pl9.place(x = 820, y = 310) 
-                    p09=Checkbutton(pikachu,variable=p9, text ='Solo',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                                    takefocus = 0)
-                    p09.place(x = 960, y = 310) 
-                    p9p=100
-                    p099=Checkbutton(pikachu,variable=p99, text ='Duo',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                                    takefocus = 0)
-                    p099.place(x = 1020, y = 310) 
-                    p99p=200
-                    p0999=Checkbutton(pikachu,variable=p999, text ='Group',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                                    takefocus = 0)
-                    p0999.place(x = 1100, y = 310) 
+                    # p08=Checkbutton(pikachu,variable=p8, text ='Solo',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+                    #                 takefocus = 0)
+                    # p08.place(x = 960, y = 290) 
+                    # p8p=50
+                    # p088=Checkbutton(pikachu,variable=p88, text ='Squad',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+                    #                 takefocus = 0)
+                    # p088.place(x = 1020, y = 290) 
+                    # p88p=200
+                    # p0888=Checkbutton(pikachu,variable=p888, text ='TDM',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+                    #                 takefocus = 0)
+                    # p0888.place(x = 1100, y = 290) 
+                    # p888p=200
+                    # p08888=Checkbutton(pikachu,variable=p8888, text ='Squad + TDM',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+                    #                 takefocus = 0)
+                    # p08888.place(x = 1170, y = 290) 
+                    # p8888p=320
+                    # pl9 = Label(pikachu, text ='DANCE',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1 )
+                    # pl9.place(x = 820, y = 310) 
+                    # p09=Checkbutton(pikachu,variable=p9, text ='Solo',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+                    #                 takefocus = 0)
+                    # p09.place(x = 960, y = 310) 
+                    # p9p=100
+                    # p099=Checkbutton(pikachu,variable=p99, text ='Duo',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+                    #                 takefocus = 0)
+                    # p099.place(x = 1020, y = 310) 
+                    # p99p=200
+                    # p0999=Checkbutton(pikachu,variable=p999, text ='Group',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+                    #                 takefocus = 0)
+                    # p0999.place(x = 1100, y = 310) 
                     
-                    p999p=400
-                    p010=Checkbutton(pikachu,variable=p10, text ='FIFA',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                                    takefocus = 0)
-                    p010.place(x = 800, y = 330) 
-                    p10p=50
-                    p011=Checkbutton(pikachu,variable=p11, text ='SINGING',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                                    takefocus = 0)
-                    p011.place(x = 800, y = 350) 
-                    p11p=100
-                    p012=Checkbutton(pikachu,variable=p12, text ='RAPPING',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                                    takefocus = 0)
-                    p012.place(x = 800, y = 370) 
-                    p12p=100
-                    p013=Checkbutton(pikachu,variable=p13, text ='BEATBOXING',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                                    takefocus = 0)
-                    p013.place(x = 800, y = 390) 
-                    p13p=100
-                    p014=Checkbutton(pikachu,variable=p14, text ='PHOTOGRAPHY',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                                    takefocus = 0)
-                    p014.place(x = 800, y = 410) 
-                    p14p=50
-                    p015=Checkbutton(pikachu,variable=p15, text ='MEHNDI',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
-                                    takefocus = 0)
-                    p015.place(x = 800, y = 430) 
-                    p15p=20
-                    y=430
+                    # p999p=400
+                    # p010=Checkbutton(pikachu,variable=p10, text ='FIFA',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+                    #                 takefocus = 0)
+                    # p010.place(x = 800, y = 330) 
+                    # p10p=50
+                    # p011=Checkbutton(pikachu,variable=p11, text ='SINGING',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+                    #                 takefocus = 0)
+                    # p011.place(x = 800, y = 350) 
+                    # p11p=100
+                    # p012=Checkbutton(pikachu,variable=p12, text ='RAPPING',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+                    #                 takefocus = 0)
+                    # p012.place(x = 800, y = 370) 
+                    # p12p=100
+                    # p013=Checkbutton(pikachu,variable=p13, text ='BEATBOXING',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+                    #                 takefocus = 0)
+                    # p013.place(x = 800, y = 390) 
+                    # p13p=100
+                    # p014=Checkbutton(pikachu,variable=p14, text ='PHOTOGRAPHY',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+                    #                 takefocus = 0)
+                    # p014.place(x = 800, y = 410) 
+                    # p14p=50
+                    # p015=Checkbutton(pikachu,variable=p15, text ='MEHNDI',font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
+                    #                 takefocus = 0)
+                    # p015.place(x = 800, y = 430) 
+                    # p15p=20
+                    y=130
                     for idx, event in enumerate(eventslist):
                         eventVariable[idx]=IntVar()
                         y=y+20
@@ -3825,10 +3824,10 @@ def outside_program():
                         '''''' 
                         arceus.configure(state=NORMAL)
                         ll1.place_forget()
-                        pl9.place_forget()
-                        pl8.place_forget()
-                        pl7.place_forget()
-                        pl4.place_forget()
+                        # pl9.place_forget()
+                        # pl8.place_forget()
+                        # pl7.place_forget()
+                        # pl4.place_forget()
                         Admin_label.place(x=494,y=690)
                         Remove_label.place(x=880,y=470)
                         Exit_label.place(x=756,y=690)
@@ -3851,28 +3850,28 @@ def outside_program():
                         reg_button.place(x=480,y=90)
 
                         ''''''
-                        p01.place_forget()
-                        p02.place_forget()
-                        p03.place_forget()
-                        p04.place_forget()
-                        p044.place_forget()
-                        p05.place_forget()
-                        p06.place_forget()
-                        p07.place_forget()
-                        p077.place_forget()
-                        p08.place_forget()
-                        p088.place_forget()
-                        p0888.place_forget()
-                        p08888.place_forget()
-                        p09.place_forget()
-                        p099.place_forget()
-                        p0999.place_forget()
-                        p010.place_forget()
-                        p011.place_forget()
-                        p012.place_forget() 
-                        p013.place_forget()
-                        p014.place_forget()
-                        p015.place_forget()
+                        # p01.place_forget()
+                        # p02.place_forget()
+                        # p03.place_forget()
+                        # p04.place_forget()
+                        # p044.place_forget()
+                        # p05.place_forget()
+                        # p06.place_forget()
+                        # p07.place_forget()
+                        # p077.place_forget()
+                        # p08.place_forget()
+                        # p088.place_forget()
+                        # p0888.place_forget()
+                        # p08888.place_forget()
+                        # p09.place_forget()
+                        # p099.place_forget()
+                        # p0999.place_forget()
+                        # p010.place_forget()
+                        # p011.place_forget()
+                        # p012.place_forget() 
+                        # p013.place_forget()
+                        # p014.place_forget()
+                        # p015.place_forget()
                         for idx, event in enumerate(eventslist):
                             eventsCheck[idx].place_forget()
                         ''''''
@@ -5189,7 +5188,7 @@ def outside_program():
         Edit_label_button=Button(pikachu,cursor='hand2',text='Exit',bd=0,highlightthickness=2,highlightbackground='cyan',highlightcolor='cyan',activebackground="black",image=photoEd,width=170,height=170,bg="black",command=Edit_Events_7)
         Edit_label_button.place(x=890,y=490)
         
-        Edit_label=Label(pikachu,font=("Times",20,"bold"),text='Edit-Events',bd=0,highlightthickness=0,bg='black',fg='orange')
+        Edit_label=Label(pikachu,font=("Times",20,"bold"),text='Add-Events',bd=0,highlightthickness=0,bg='black',fg='orange')
         Edit_label.place(x=890,y=690)
 
         removeit=os.getcwd()
