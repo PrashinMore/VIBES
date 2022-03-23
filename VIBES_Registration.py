@@ -2979,695 +2979,6 @@ def outside_program():
             About_label.place_forget()
             Remove_label.place_forget()
 
-            def pokeball():                                                                                                                    
-                TotalSum=[]
-
-                def BC():
-                
-                    
-                    
-                    brock=p1.get()
-                    if brock == 1:
-                        ''''''
-                        
-                        cur.execute(f'Update Students_database3 set Box_Cricket = "yes"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        #dead=cur.execute("select * from Students_database3;")
-                        
-                        TotalSum.append(p1p)
-                        
-                        RF()
-                        BD()
-                        CRS()
-                        CRD()
-                        TT()
-                        CSS()
-                        CT5()
-                        CT3()
-                        PGS()
-                        PGD()
-                        PGT()
-                        PGST()
-                        DCS()
-                        DSD()
-                        DSG()
-                        SG()
-                        FF()
-                        RP()
-                        BTBX()
-                        PGY()
-                        MDI()
-                        Elist()
-                        
-                        bj=sum(TotalSum)
-                        cur.execute(f'Update Students_database3 set Totalammo = "{bj}"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        dialga="Total Amount = RS."+str(bj)
-                        print("total amount 2")
-                        MEGA_ARCEUS=Label(pikachu,text=dialga,width=30,bg='blue',fg='yellow',font=("Times",50,"bold"))
-                        MEGA_ARCEUS.place(x=0,y=360)
-
-                        ''''''
-                        def hommming11():
-                            ''''''
-                            reg_button.configure(state=NORMAL)
-                            RB1.place_forget()
-                            RB2.place_forget()
-                            zapados.place_forget()
-                            
-                            
-                            Exit_button.place(x=690,y=530)
-                            Admin_Login_button.place(x=480,y=530)
-                            Remove_label_button.place(x=880,y=310)
-                            Edit_label_button.place(x=890,y=530)
-
-                            Vibes_Events_All_Info_button.place(x=690,y=310)
-                            Vibes_Events.place(x=480,y=310)
-                            About_Vibes_button.place(x=690,y=90)
-                            reg_button.place(x=480,y=90)
-
-                            ''''''
-                            Admin_label.place(x=494,y=690)
-                            Remove_label.place(x=880,y=470)
-                            Edit_label.place(x=890,y=530)
-                            Exit_label.place(x=756,y=690)
-                            Vibes_label.place(x=507,y=470)
-                            eventall_label.place(x=720,y=470)
-                            reg_label.place(x=515,y=250)
-                            About_label.place(x=706,y=250)
-
-
-                            ''''''
-                            MEGA_ARCEUS.place_forget()
-                            moltress.place_forget()
-                            moltresssssssp.place_forget()
-                            pikachu.mainloop()
-                            
-
-                        ash000000=os.getcwd()
-                        ookoooooo=ash000000+"//home.png"
-                        
-                        photo2222222 = PhotoImage(file=ookoooooo)
-                        moltresssssssp = Button(pikachu,cursor='hand2',command=hommming11,bd=0,bg="black",activeforeground="orange",activebackground='black',image=photo2222222 ,width=73,height=65,highlightthickness=0)
-                        moltresssssssp.place(x=1289,y=62)
-                        ''''''
-
-                        ''''''                                                                                                                                                                                                                                
-                        def backbtn000():
-                            reg_button.configure(state=NORMAL)
-                            ''''''
-                            moltresssssssp.place_forget()
-
-                            ''''''
-                            ''''''
-                            MEGA_ARCEUS.place_forget()
-                            ''''''
-                            moltress.place_forget()
-                            pikachu.mainloop()
-                            
-                        ash=os.getcwd()
-                        ook=ash+"//reply.png"
-                        
-                        photo22 = PhotoImage(file=ook)
-                        moltress = Button(pikachu,cursor='hand2',highlightthickness=0,activeforeground="black",activebackground='black',bg="black",image=photo22 ,width=73,height=65,bd=0,command=backbtn000)
-                        moltress.place(x=0,y=62)
-                        
-                        pikachu.mainloop()
-                        
-                        
-                                        
-
-
-                        
-
-                    else:
-                        ''''''
-                        cur.execute(f'Update Students_database3 set Box_Cricket = "no"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        RF()
-                        BD()
-                        CRS()
-                        CRD()
-                        TT()
-                        CSS()
-                        CT5()
-                        CT3()
-                        PGS()
-                        PGD()
-                        PGT()
-                        PGST()
-                        DCS()
-                        DSD()
-                        DSG()
-                        SG()
-                        FF()
-                        RP()
-                        BTBX()
-                        PGY()
-                        MDI()
-                        Elist()
-                        pl7.place_forget()
-                        bj=sum(TotalSum)
-
-                        cur.execute(f'Update Students_database3 set Totalammo = "{bj}"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        print("total amount1")
-                        dialga="Total Amount = RS."+str(bj)
-                        def hommming2():
-                            ''''''
-                            reg_button.configure(state=NORMAL)
-                            RB1.place_forget()
-                            RB2.place_forget()
-                            zapados.place_forget()
-                            
-                            Admin_label.place(x=494,y=690)
-                            Remove_label.place(x=880,y=470)
-                            Edit_label.place(x=890,y=530)
-                            Exit_label.place(x=756,y=690)
-                            Vibes_label.place(x=507,y=470)
-                            eventall_label.place(x=720,y=470)
-                            reg_label.place(x=515,y=250)
-                            About_label.place(x=706,y=250)
-                            MEGA_ARCEUS.place_forget()
-                            moltress0.place_forget()
-
-
-                            Exit_button.place(x=690,y=530)
-                            Admin_Login_button.place(x=480,y=530)
-                            Remove_label_button.place(x=880,y=310)
-                            Edit_label_button.place(x=890,y=530)
-                            Vibes_Events_All_Info_button.place(x=690,y=310)
-                            Vibes_Events.place(x=480,y=310)
-                            About_Vibes_button.place(x=690,y=90)
-                            reg_button.place(x=480,y=90)
-
-                            
-                            moltressssss.place_forget()
-                            pikachu.mainloop()
-
-                        ash000000=os.getcwd()
-                        ookoooooo=ash000000+"//home.png"
-                        
-                        photo2222222 = PhotoImage(file=ookoooooo)
-                        moltressssss = Button(pikachu,cursor='hand2',command=hommming2,bd=0,bg="black",activeforeground="orange",activebackground='black',image=photo2222222 ,highlightthickness=0,width=73,height=65)
-                        moltressssss.place(x=1289,y=62)
-                        ''''''
-                        ''''''
-                        ll1.place_forget()
-                        pl9.place_forget()
-                        pl8.place_forget()
-                        pl7.place_forget
-                        pl4.place_forget()
-
-
-                        ''''''
-                        
-
-                        mega.place_forget()
-                        megapikachu.place_forget()
-                        mega2.place_forget()
-                        megapikachu2.place_forget()
-                        mega3.place_forget()
-                        megapikachu3.place_forget()
-                        mega4.place_forget()
-                        megapikachu4.place_forget()
-                        mega5.place_forget()
-                        megapikachu5.place_forget()
-                        mega6.place_forget()
-                        megapikachu6.place_forget()
-                        mega7.place_forget()
-
-
-
-                        MEGA_ARCEUS=Label(pikachu,text=dialga,width=30,bg='orange',fg='black',font=("Arial Black",50,"bold"))
-                        MEGA_ARCEUS.place(x=0,y=360)
-                        arceus.place_forget()
-                        ''''''
-                        p01.place_forget()
-                        p02.place_forget()
-                        p03.place_forget()
-                        p04.place_forget()
-                        p044.place_forget()
-                        p05.place_forget()
-                        p06.place_forget()
-                        p07.place_forget()
-                        p077.place_forget()
-                        p08.place_forget()
-                        p088.place_forget()
-                        p0888.place_forget()
-                        p08888.place_forget()
-                        p09.place_forget()
-                        p099.place_forget()
-                        p0999.place_forget()
-                        p010.place_forget()
-                        p011.place_forget()
-                        p012.place_forget() 
-                        p013.place_forget()
-                        p014.place_forget()
-                        p015.place_forget()
-                        for idx, event in enumerate(eventslist):
-                            eventsCheck[idx].place_forget()
-                        
-                        
-                        
-                        def backbtn0001():
-                            ''''''
-                            reg_button.configure(state=NORMAL)
-                            arceus.configure(state=NORMAL)
-                            megapikachu0.set('')
-                            megapikachu20.set('')
-                            megapikachu30.set('')
-                            megapikachu40.set('')
-                            megapikachu50.set('')
-                            megapikachu60.set('')
-                            __MOF__.set('')
-                            p1.set(0)
-                            p2.set(0)
-                            p3.set(0)
-                            p4.set(0)
-                            p5.set(0)
-                            p6.set(0)
-                            p7.set(0)
-                            p8.set(0)
-                            p9.set(0)
-                            p10.set(0)
-                            p11.set(0)
-                            p12.set(0)
-                            p13.set(0)
-                            p14.set(0)
-                            p15.set(0)
-                            p44.set(0)
-                            p77.set(0)
-                            p88.set(0)
-                            p888.set(0)
-                            p8888.set(0)
-                            p99.set(0)
-                            p999.set(0)
-                            ''''''
-                            moltressssss.place_forget()
-                            moltress0.place_forget()
-
-                            RB1.place(y=391,x=225)
-                            RB2.place(y=391,x=300)
-                            
-                            ll1.place(x = 800, y = 115) 
-                            pl9.place(x = 820, y = 310)
-                            pl8.place(x = 820, y = 290)
-                            pl7.place(x = 820, y = 270)
-                            pl4.place(x = 820, y = 210)
-
-                            ''''''
-                            mega.place(x=110,y=150)
-                            megapikachu.place(x=240,y=151)
-                            mega2.place(x=450,y=150)
-                            megapikachu2.place(x=580,y=151)
-                            mega3.place(x=110,y=230)
-                            megapikachu3.place(x=240,y=231)
-                            mega4.place(x=450,y=230)
-                            megapikachu4.place(x=580,y=231)
-                            mega5.place(x=110,y=310)
-                            megapikachu5.place(x=240,y=311)
-                            mega6.place(x=450,y=310)
-                            megapikachu6.place(x=580,y=311)
-                            mega7.place(x=110,y=390)
-                            ''''''
-                            MEGA_ARCEUS.place_forget()
-
-                            
-                            ''''''
-                            arceus.place(x=600,y=640)
-                            ''''''
-                            p01.place(x = 800, y = 150)
-                            p02.place(x = 800, y = 170)
-                            p03.place(x = 800, y = 190)
-                            p04.place(x = 960, y = 210)
-                            p044.place(x = 1020, y = 210)
-                            p05.place(x = 800, y = 230)
-                            p06.place(x = 800, y = 250)
-                            p07.place(x = 960, y = 270)
-                            p077.place(x = 1020, y = 270)
-                            p08.place(x = 960, y = 290)
-                            p088.place(x = 1020, y = 290)
-                            p0888.place(x = 1100, y = 290)
-                            p08888.place(x = 1170, y = 290) 
-                            p09.place(x = 960, y = 310) 
-                            p099.place(x = 1020, y = 310) 
-                            p0999.place(x = 1100, y = 310)
-                            p010.place(x = 800, y = 330)
-                            p011.place(x = 800, y = 350)
-                            p012.place(x = 800, y = 370) 
-                            p013.place(x = 800, y = 390)
-                            p014.place(x = 800, y = 410) 
-                            p015.place(x = 800, y = 430)
-                            pikachu.mainloop()
-
-                        ash=os.getcwd()
-                        ook=ash+"//reply.png"
-                        
-                        photo22 = PhotoImage(file=ook)
-                        moltress0 = Button(pikachu,cursor='hand2',activeforeground="black",activebackground='black',bg="black",image=photo22 ,width=73,height=65,bd=0,highlightthickness=0,command=backbtn0001)
-                        moltress0.place(x=0,y=62)
-                        
-                        pikachu.mainloop()
-                        
-                def RF():
-                    brock=p2.get()  
-
-                    if brock == 1:
-                        ''''''
-                        
-                        cur.execute(f'Update Students_database3 set Rink_Football = "yes"  where Mobile_No="{oneplus}"  ')
-                        
-                        
-                        TotalSum.append(p2p)
-                        
-
-                    else:
-                        cur.execute(f'Update Students_database3 set Rink_Football = "no"  where Mobile_No="{oneplus}"  ')
-                        ''''''
-                        
-                def Elist():
-                    for idx,event in enumerate(eventslist):
-                        brock=eventVariable[idx].get()  
-
-                        if brock == 1:
-                            ''''''
-                            
-                            cur.execute(f'Update Students_database3 set {event[0]} = "yes"  where Mobile_No="{oneplus}"  ')
-                            
-                            print(event)
-                            TotalSum.append(event[1])
-
-                            
-
-                        else:
-                            cur.execute(f'Update Students_database3 set {event[0]} = "no"  where Mobile_No="{oneplus}"  ')
-
-
-
-                def BD():
-                    brock=p3.get()
-                    if brock == 1:
-                        ''''''
-                        
-                        cur.execute(f'Update Students_database3 set Badminton = "yes"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-
-                        TotalSum.append(p3p)
-                        
-
-                    else:
-                        ''''''
-                        cur.execute(f'Update Students_database3 set Badminton = "no"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        
-                def CRS():
-                    brock=p4.get()
-                    if brock == 1:
-                        ''''''
-                        
-                        cur.execute(f'Update Students_database3 set Carrom_Solo = "yes"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        TotalSum.append(p4p)
-                        
-
-                    else:
-                        ''''''
-                        cur.execute(f'Update Students_database3 set Carrom_Solo = "no"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        
-                def CRD():
-                    brock=p44.get()
-                    if brock == 1:
-                        ''''''
-                        
-                        cur.execute(f'Update Students_database3 set Carrom_Duo = "yes"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        TotalSum.append(p44p)
-                        
-
-                    else:
-                        ''''''
-                        cur.execute(f'Update Students_database3 set Carrom_Duo = "no"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        
-                def TT():
-                    brock=p5.get()
-                    if brock == 1:
-                        ''''''
-                        
-                        cur.execute(f'Update Students_database3 set Table_Tennis = "yes"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        TotalSum.append(p5p)
-                        
-
-                    else:
-                        ''''''
-                        cur.execute(f'Update Students_database3 set Table_Tennis = "no"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        
-                def CSS():
-                    brock=p6.get()
-                    if brock == 1:
-                        ''''''
-                        
-                        cur.execute(f'Update Students_database3 set Chess = "yes"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        TotalSum.append(p6p)
-                        
-
-                    else:
-                        ''''''
-                        cur.execute(f'Update Students_database3 set Chess = "no"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        
-                def CT5():
-                    brock=p7.get()
-                    if brock == 1:
-                        ''''''
-                        
-                        cur.execute(f'Update Students_database3 set Counter_Strike_Five_M = "yes"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        TotalSum.append(p7p)
-                        
-
-                    else:
-                        ''''''
-                        cur.execute(f'Update Students_database3 set Counter_Strike_Five_M = "no"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        
-                def CT3():
-                    brock=p77.get()
-                    if brock == 1:
-                        ''''''
-                        
-                        cur.execute(f'Update Students_database3 set Counter_Strike_Three_M = "yes"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        TotalSum.append(p77p)
-                        
-
-                    else:
-                        ''''''
-                        cur.execute(f'Update Students_database3 set Counter_Strike_Three_M = "no"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        
-                def PGS():
-                    brock=p8.get()
-                    if brock == 1:
-                        ''''''
-                        
-                        cur.execute(f'Update Students_database3 set Pubg_Solo = "yes"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        TotalSum.append(p8p)
-                        
-
-                    else:
-                        ''''''
-                        cur.execute(f'Update Students_database3 set Pubg_Solo = "no"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        
-                def PGD():
-                    brock=p88.get()
-                    if brock == 1:
-                        ''''''
-                        
-                        cur.execute(f'Update Students_database3 set Pubg_Squad = "yes"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        TotalSum.append(p88p)
-                        
-
-                    else:
-                        ''''''
-                        cur.execute(f'Update Students_database3 set Pubg_Squad = "no"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        
-                def PGT():
-                    brock=p888.get()
-                    if brock == 1:
-                        ''''''
-                        
-                        cur.execute(f'Update Students_database3 set Pubg_TDM = "yes"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        TotalSum.append(p888p)
-                        
-
-                    else:
-                        ''''''
-                        cur.execute(f'Update Students_database3 set Pubg_TDM = "no"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        
-                def PGST():
-                    brock=p8888.get()
-                    if brock == 1:
-                        ''''''
-                        
-                        cur.execute(f'Update Students_database3 set Pubg_Squad_TDM = "yes"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        TotalSum.append(p8888p)
-                        
-
-                    else:
-                        ''''''
-                        cur.execute(f'Update Students_database3 set Pubg_Squad_TDM = "no"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        
-                def DCS():
-                    brock=p9.get()
-                    if brock == 1:
-                        ''''''
-                        
-                        cur.execute(f'Update Students_database3 set Dance_Solo = "yes"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        TotalSum.append(p9p)
-                        
-
-                    else:
-                        ''''''
-                        cur.execute(f'Update Students_database3 set Dance_Solo = "no"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        
-                def DSD():
-                    brock=p99.get()
-                    if brock == 1:
-                        ''''''
-                        
-                        cur.execute(f'Update Students_database3 set Dance_Group_Duo = "yes"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        TotalSum.append(p99p)
-                        
-
-                    else:
-                        ''''''
-                        cur.execute(f'Update Students_database3 set Dance_Group_Duo = "no"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        
-                def DSG():
-                    brock=p999.get()
-                    if brock == 1:
-                        ''''''
-                        
-                        cur.execute(f'Update Students_database3 set Dance_Group_Squad = "yes"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        TotalSum.append(p999p)
-                        
-
-                    else:
-                        ''''''
-                        cur.execute(f'Update Students_database3 set Dance_Group_Squad = "no"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        
-                def FF():
-                    brock=p10.get()
-                    if brock == 1:
-                        ''''''
-                        
-                        cur.execute(f'Update Students_database3 set Fifa = "yes"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        TotalSum.append(p10p)
-                        
-
-                    else:
-                        ''''''
-                        cur.execute(f'Update Students_database3 set Fifa = "no"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        
-                def SG():
-                    brock=p11.get()
-                    if brock == 1:
-                        ''''''
-                        
-                        cur.execute(f'Update Students_database3 set Singing = "yes"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        TotalSum.append(p11p)
-                        
-
-                    else:
-                        ''''''
-                        cur.execute(f'Update Students_database3 set Singing = "no"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        
-                def RP():
-                    brock=p12.get()
-                    if brock == 1:
-                        ''''''
-                        
-                        cur.execute(f'Update Students_database3 set Rapping = "yes"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        TotalSum.append(p12p)
-                        
-
-                    else:
-                        ''''''
-                        cur.execute(f'Update Students_database3 set Rapping = "no"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        
-                def BTBX():
-                    brock=p13.get()
-                    if brock == 1:
-                        ''''''
-                        
-                        cur.execute(f'Update Students_database3 set Beatboxing = "yes"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        TotalSum.append(p13p)
-                        
-
-                    else:
-                        ''''''
-                        cur.execute(f'Update Students_database3 set Beatboxing = "no"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        
-                def PGY():
-                    brock=p14.get()
-                    if brock == 1:
-                        ''''''
-                        
-                        cur.execute(f'Update Students_database3 set Photography = "yes"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        TotalSum.append(p14p)
-                        
-
-                    else:
-                        ''''''
-                        cur.execute(f'Update Students_database3 set Photography = "no"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        
-                def MDI():
-                    brock=p15.get()
-                    if brock == 1:
-                        ''''''
-                        
-                        cur.execute(f'Update Students_database3 set Mehndi = "yes"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        TotalSum.append(p15p)
-                        bj=sum(TotalSum)
-                        
-
-                    else:
-                        ''''''
-                        cur.execute(f'Update Students_database3 set Mehndi = "no"  where Mobile_No="{oneplus}"  ')
-                        con.commit()
-                        
-                BC()
             def submitpass():
                 ''''''
                 hoho=diglet1.get()
@@ -3676,6 +2987,695 @@ def outside_program():
                      
                     pubgm.place_forget()
                     moltress.place_forget()
+
+                    def pokeball():                                                                                                                    
+
+                        def BC():
+                        
+                            
+                            
+                            brock=p1.get()
+                            if brock == 1:
+                                ''''''
+                                
+                                cur.execute(f'Update Students_database3 set Box_Cricket = "yes"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                #dead=cur.execute("select * from Students_database3;")
+                                
+                                TotalSum.append(p1p)
+                                
+                                RF()
+                                BD()
+                                CRS()
+                                CRD()
+                                TT()
+                                CSS()
+                                CT5()
+                                CT3()
+                                PGS()
+                                PGD()
+                                PGT()
+                                PGST()
+                                DCS()
+                                DSD()
+                                DSG()
+                                SG()
+                                FF()
+                                RP()
+                                BTBX()
+                                PGY()
+                                MDI()
+                                Elist()
+                                
+                                bj=sum(TotalSum)
+                                cur.execute(f'Update Students_database3 set Totalammo = "{bj}"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                dialga="Total Amount = RS."+str(bj)
+                                print("total amount 2")
+                                MEGA_ARCEUS=Label(pikachu,text=dialga,width=30,bg='blue',fg='yellow',font=("Times",50,"bold"))
+                                MEGA_ARCEUS.place(x=0,y=360)
+
+                                ''''''
+                                def hommming11():
+                                    ''''''
+                                    reg_button.configure(state=NORMAL)
+                                    RB1.place_forget()
+                                    RB2.place_forget()
+                                    zapados.place_forget()
+                                    
+                                    
+                                    Exit_button.place(x=690,y=530)
+                                    Admin_Login_button.place(x=480,y=530)
+                                    Remove_label_button.place(x=880,y=310)
+                                    Edit_label_button.place(x=890,y=530)
+
+                                    Vibes_Events_All_Info_button.place(x=690,y=310)
+                                    Vibes_Events.place(x=480,y=310)
+                                    About_Vibes_button.place(x=690,y=90)
+                                    reg_button.place(x=480,y=90)
+
+                                    ''''''
+                                    Admin_label.place(x=494,y=690)
+                                    Remove_label.place(x=880,y=470)
+                                    Edit_label.place(x=890,y=530)
+                                    Exit_label.place(x=756,y=690)
+                                    Vibes_label.place(x=507,y=470)
+                                    eventall_label.place(x=720,y=470)
+                                    reg_label.place(x=515,y=250)
+                                    About_label.place(x=706,y=250)
+
+
+                                    ''''''
+                                    MEGA_ARCEUS.place_forget()
+                                    moltress.place_forget()
+                                    moltresssssssp.place_forget()
+                                    pikachu.mainloop()
+                                    
+
+                                ash000000=os.getcwd()
+                                ookoooooo=ash000000+"//home.png"
+                                
+                                photo2222222 = PhotoImage(file=ookoooooo)
+                                moltresssssssp = Button(pikachu,cursor='hand2',command=hommming11,bd=0,bg="black",activeforeground="orange",activebackground='black',image=photo2222222 ,width=73,height=65,highlightthickness=0)
+                                moltresssssssp.place(x=1289,y=62)
+                                ''''''
+
+                                ''''''                                                                                                                                                                                                                                
+                                def backbtn000():
+                                    reg_button.configure(state=NORMAL)
+                                    ''''''
+                                    moltresssssssp.place_forget()
+
+                                    ''''''
+                                    ''''''
+                                    MEGA_ARCEUS.place_forget()
+                                    ''''''
+                                    moltress.place_forget()
+                                    pikachu.mainloop()
+                                    
+                                ash=os.getcwd()
+                                ook=ash+"//reply.png"
+                                
+                                photo22 = PhotoImage(file=ook)
+                                moltress = Button(pikachu,cursor='hand2',highlightthickness=0,activeforeground="black",activebackground='black',bg="black",image=photo22 ,width=73,height=65,bd=0,command=backbtn000)
+                                moltress.place(x=0,y=62)
+                                
+                                pikachu.mainloop()
+                                
+                                
+                                                
+
+
+                                
+
+                            else:
+                                ''''''
+                                cur.execute(f'Update Students_database3 set Box_Cricket = "no"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                RF()
+                                BD()
+                                CRS()
+                                CRD()
+                                TT()
+                                CSS()
+                                CT5()
+                                CT3()
+                                PGS()
+                                PGD()
+                                PGT()
+                                PGST()
+                                DCS()
+                                DSD()
+                                DSG()
+                                SG()
+                                FF()
+                                RP()
+                                BTBX()
+                                PGY()
+                                MDI()
+                                Elist()
+                                pl7.place_forget()
+                                bj=sum(TotalSum)
+
+                                cur.execute(f'Update Students_database3 set Totalammo = "{bj}"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                print("total amount1")
+                                dialga="Total Amount = RS."+str(bj)
+                                def hommming2():
+                                    ''''''
+                                    reg_button.configure(state=NORMAL)
+                                    RB1.place_forget()
+                                    RB2.place_forget()
+                                    zapados.place_forget()
+                                    
+                                    Admin_label.place(x=494,y=690)
+                                    Remove_label.place(x=880,y=470)
+                                    Edit_label.place(x=890,y=530)
+                                    Exit_label.place(x=756,y=690)
+                                    Vibes_label.place(x=507,y=470)
+                                    eventall_label.place(x=720,y=470)
+                                    reg_label.place(x=515,y=250)
+                                    About_label.place(x=706,y=250)
+                                    MEGA_ARCEUS.place_forget()
+                                    moltress0.place_forget()
+
+
+                                    Exit_button.place(x=690,y=530)
+                                    Admin_Login_button.place(x=480,y=530)
+                                    Remove_label_button.place(x=880,y=310)
+                                    Edit_label_button.place(x=890,y=530)
+                                    Vibes_Events_All_Info_button.place(x=690,y=310)
+                                    Vibes_Events.place(x=480,y=310)
+                                    About_Vibes_button.place(x=690,y=90)
+                                    reg_button.place(x=480,y=90)
+
+                                    
+                                    moltressssss.place_forget()
+                                    pikachu.mainloop()
+
+                                ash000000=os.getcwd()
+                                ookoooooo=ash000000+"//home.png"
+                                
+                                photo2222222 = PhotoImage(file=ookoooooo)
+                                moltressssss = Button(pikachu,cursor='hand2',command=hommming2,bd=0,bg="black",activeforeground="orange",activebackground='black',image=photo2222222 ,highlightthickness=0,width=73,height=65)
+                                moltressssss.place(x=1289,y=62)
+                                ''''''
+                                ''''''
+                                ll1.place_forget()
+                                pl9.place_forget()
+                                pl8.place_forget()
+                                pl7.place_forget
+                                pl4.place_forget()
+
+
+                                ''''''
+                                
+
+                                mega.place_forget()
+                                megapikachu.place_forget()
+                                mega2.place_forget()
+                                megapikachu2.place_forget()
+                                mega3.place_forget()
+                                megapikachu3.place_forget()
+                                mega4.place_forget()
+                                megapikachu4.place_forget()
+                                mega5.place_forget()
+                                megapikachu5.place_forget()
+                                mega6.place_forget()
+                                megapikachu6.place_forget()
+                                mega7.place_forget()
+
+
+
+                                MEGA_ARCEUS=Label(pikachu,text=dialga,width=30,bg='orange',fg='black',font=("Arial Black",50,"bold"))
+                                MEGA_ARCEUS.place(x=0,y=360)
+                                arceus.place_forget()
+                                ''''''
+                                p01.place_forget()
+                                p02.place_forget()
+                                p03.place_forget()
+                                p04.place_forget()
+                                p044.place_forget()
+                                p05.place_forget()
+                                p06.place_forget()
+                                p07.place_forget()
+                                p077.place_forget()
+                                p08.place_forget()
+                                p088.place_forget()
+                                p0888.place_forget()
+                                p08888.place_forget()
+                                p09.place_forget()
+                                p099.place_forget()
+                                p0999.place_forget()
+                                p010.place_forget()
+                                p011.place_forget()
+                                p012.place_forget() 
+                                p013.place_forget()
+                                p014.place_forget()
+                                p015.place_forget()
+                                for idx, event in enumerate(eventslist):
+                                    eventsCheck[idx].place_forget()
+                                
+                                
+                                
+                                def backbtn0001():
+                                    ''''''
+                                    reg_button.configure(state=NORMAL)
+                                    arceus.configure(state=NORMAL)
+                                    megapikachu0.set('')
+                                    megapikachu20.set('')
+                                    megapikachu30.set('')
+                                    megapikachu40.set('')
+                                    megapikachu50.set('')
+                                    megapikachu60.set('')
+                                    __MOF__.set('')
+                                    p1.set(0)
+                                    p2.set(0)
+                                    p3.set(0)
+                                    p4.set(0)
+                                    p5.set(0)
+                                    p6.set(0)
+                                    p7.set(0)
+                                    p8.set(0)
+                                    p9.set(0)
+                                    p10.set(0)
+                                    p11.set(0)
+                                    p12.set(0)
+                                    p13.set(0)
+                                    p14.set(0)
+                                    p15.set(0)
+                                    p44.set(0)
+                                    p77.set(0)
+                                    p88.set(0)
+                                    p888.set(0)
+                                    p8888.set(0)
+                                    p99.set(0)
+                                    p999.set(0)
+                                    ''''''
+                                    moltressssss.place_forget()
+                                    moltress0.place_forget()
+
+                                    RB1.place(y=391,x=225)
+                                    RB2.place(y=391,x=300)
+                                    
+                                    ll1.place(x = 800, y = 115) 
+                                    pl9.place(x = 820, y = 310)
+                                    pl8.place(x = 820, y = 290)
+                                    pl7.place(x = 820, y = 270)
+                                    pl4.place(x = 820, y = 210)
+
+                                    ''''''
+                                    mega.place(x=110,y=150)
+                                    megapikachu.place(x=240,y=151)
+                                    mega2.place(x=450,y=150)
+                                    megapikachu2.place(x=580,y=151)
+                                    mega3.place(x=110,y=230)
+                                    megapikachu3.place(x=240,y=231)
+                                    mega4.place(x=450,y=230)
+                                    megapikachu4.place(x=580,y=231)
+                                    mega5.place(x=110,y=310)
+                                    megapikachu5.place(x=240,y=311)
+                                    mega6.place(x=450,y=310)
+                                    megapikachu6.place(x=580,y=311)
+                                    mega7.place(x=110,y=390)
+                                    ''''''
+                                    MEGA_ARCEUS.place_forget()
+
+                                    
+                                    ''''''
+                                    arceus.place(x=600,y=640)
+                                    ''''''
+                                    p01.place(x = 800, y = 150)
+                                    p02.place(x = 800, y = 170)
+                                    p03.place(x = 800, y = 190)
+                                    p04.place(x = 960, y = 210)
+                                    p044.place(x = 1020, y = 210)
+                                    p05.place(x = 800, y = 230)
+                                    p06.place(x = 800, y = 250)
+                                    p07.place(x = 960, y = 270)
+                                    p077.place(x = 1020, y = 270)
+                                    p08.place(x = 960, y = 290)
+                                    p088.place(x = 1020, y = 290)
+                                    p0888.place(x = 1100, y = 290)
+                                    p08888.place(x = 1170, y = 290) 
+                                    p09.place(x = 960, y = 310) 
+                                    p099.place(x = 1020, y = 310) 
+                                    p0999.place(x = 1100, y = 310)
+                                    p010.place(x = 800, y = 330)
+                                    p011.place(x = 800, y = 350)
+                                    p012.place(x = 800, y = 370) 
+                                    p013.place(x = 800, y = 390)
+                                    p014.place(x = 800, y = 410) 
+                                    p015.place(x = 800, y = 430)
+                                    pikachu.mainloop()
+
+                                ash=os.getcwd()
+                                ook=ash+"//reply.png"
+                                
+                                photo22 = PhotoImage(file=ook)
+                                moltress0 = Button(pikachu,cursor='hand2',activeforeground="black",activebackground='black',bg="black",image=photo22 ,width=73,height=65,bd=0,highlightthickness=0,command=backbtn0001)
+                                moltress0.place(x=0,y=62)
+                                
+                                pikachu.mainloop()
+                                
+                        def RF():
+                            brock=p2.get()  
+
+                            if brock == 1:
+                                ''''''
+                                
+                                cur.execute(f'Update Students_database3 set Rink_Football = "yes"  where Mobile_No="{oneplus}"  ')
+                                
+                                
+                                TotalSum.append(p2p)
+                                
+
+                            else:
+                                cur.execute(f'Update Students_database3 set Rink_Football = "no"  where Mobile_No="{oneplus}"  ')
+                                ''''''
+                                
+                        def Elist():
+                            for idx,event in enumerate(eventslist):
+                                brock=eventVariable[idx].get()  
+
+                                if brock == 1:
+                                    ''''''
+                                    
+                                    cur.execute(f'Update Students_database3 set {event[0]} = "yes"  where Mobile_No="{oneplus}"  ')
+                                    
+                                    print(event)
+                                    TotalSum.append(event[1])
+
+                                    
+
+                                else:
+                                    cur.execute(f'Update Students_database3 set {event[0]} = "no"  where Mobile_No="{oneplus}"  ')
+
+
+
+                        def BD():
+                            brock=p3.get()
+                            if brock == 1:
+                                ''''''
+                                
+                                cur.execute(f'Update Students_database3 set Badminton = "yes"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+
+                                TotalSum.append(p3p)
+                                
+
+                            else:
+                                ''''''
+                                cur.execute(f'Update Students_database3 set Badminton = "no"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                
+                        def CRS():
+                            brock=p4.get()
+                            if brock == 1:
+                                ''''''
+                                
+                                cur.execute(f'Update Students_database3 set Carrom_Solo = "yes"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                TotalSum.append(p4p)
+                                
+
+                            else:
+                                ''''''
+                                cur.execute(f'Update Students_database3 set Carrom_Solo = "no"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                
+                        def CRD():
+                            brock=p44.get()
+                            if brock == 1:
+                                ''''''
+                                
+                                cur.execute(f'Update Students_database3 set Carrom_Duo = "yes"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                TotalSum.append(p44p)
+                                
+
+                            else:
+                                ''''''
+                                cur.execute(f'Update Students_database3 set Carrom_Duo = "no"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                
+                        def TT():
+                            brock=p5.get()
+                            if brock == 1:
+                                ''''''
+                                
+                                cur.execute(f'Update Students_database3 set Table_Tennis = "yes"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                TotalSum.append(p5p)
+                                
+
+                            else:
+                                ''''''
+                                cur.execute(f'Update Students_database3 set Table_Tennis = "no"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                
+                        def CSS():
+                            brock=p6.get()
+                            if brock == 1:
+                                ''''''
+                                
+                                cur.execute(f'Update Students_database3 set Chess = "yes"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                TotalSum.append(p6p)
+                                
+
+                            else:
+                                ''''''
+                                cur.execute(f'Update Students_database3 set Chess = "no"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                
+                        def CT5():
+                            brock=p7.get()
+                            if brock == 1:
+                                ''''''
+                                
+                                cur.execute(f'Update Students_database3 set Counter_Strike_Five_M = "yes"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                TotalSum.append(p7p)
+                                
+
+                            else:
+                                ''''''
+                                cur.execute(f'Update Students_database3 set Counter_Strike_Five_M = "no"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                
+                        def CT3():
+                            brock=p77.get()
+                            if brock == 1:
+                                ''''''
+                                
+                                cur.execute(f'Update Students_database3 set Counter_Strike_Three_M = "yes"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                TotalSum.append(p77p)
+                                
+
+                            else:
+                                ''''''
+                                cur.execute(f'Update Students_database3 set Counter_Strike_Three_M = "no"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                
+                        def PGS():
+                            brock=p8.get()
+                            if brock == 1:
+                                ''''''
+                                
+                                cur.execute(f'Update Students_database3 set Pubg_Solo = "yes"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                TotalSum.append(p8p)
+                                
+
+                            else:
+                                ''''''
+                                cur.execute(f'Update Students_database3 set Pubg_Solo = "no"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                
+                        def PGD():
+                            brock=p88.get()
+                            if brock == 1:
+                                ''''''
+                                
+                                cur.execute(f'Update Students_database3 set Pubg_Squad = "yes"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                TotalSum.append(p88p)
+                                
+
+                            else:
+                                ''''''
+                                cur.execute(f'Update Students_database3 set Pubg_Squad = "no"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                
+                        def PGT():
+                            brock=p888.get()
+                            if brock == 1:
+                                ''''''
+                                
+                                cur.execute(f'Update Students_database3 set Pubg_TDM = "yes"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                TotalSum.append(p888p)
+                                
+
+                            else:
+                                ''''''
+                                cur.execute(f'Update Students_database3 set Pubg_TDM = "no"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                
+                        def PGST():
+                            brock=p8888.get()
+                            if brock == 1:
+                                ''''''
+                                
+                                cur.execute(f'Update Students_database3 set Pubg_Squad_TDM = "yes"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                TotalSum.append(p8888p)
+                                
+
+                            else:
+                                ''''''
+                                cur.execute(f'Update Students_database3 set Pubg_Squad_TDM = "no"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                
+                        def DCS():
+                            brock=p9.get()
+                            if brock == 1:
+                                ''''''
+                                
+                                cur.execute(f'Update Students_database3 set Dance_Solo = "yes"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                TotalSum.append(p9p)
+                                
+
+                            else:
+                                ''''''
+                                cur.execute(f'Update Students_database3 set Dance_Solo = "no"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                
+                        def DSD():
+                            brock=p99.get()
+                            if brock == 1:
+                                ''''''
+                                
+                                cur.execute(f'Update Students_database3 set Dance_Group_Duo = "yes"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                TotalSum.append(p99p)
+                                
+
+                            else:
+                                ''''''
+                                cur.execute(f'Update Students_database3 set Dance_Group_Duo = "no"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                
+                        def DSG():
+                            brock=p999.get()
+                            if brock == 1:
+                                ''''''
+                                
+                                cur.execute(f'Update Students_database3 set Dance_Group_Squad = "yes"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                TotalSum.append(p999p)
+                                
+
+                            else:
+                                ''''''
+                                cur.execute(f'Update Students_database3 set Dance_Group_Squad = "no"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                
+                        def FF():
+                            brock=p10.get()
+                            if brock == 1:
+                                ''''''
+                                
+                                cur.execute(f'Update Students_database3 set Fifa = "yes"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                TotalSum.append(p10p)
+                                
+
+                            else:
+                                ''''''
+                                cur.execute(f'Update Students_database3 set Fifa = "no"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                
+                        def SG():
+                            brock=p11.get()
+                            if brock == 1:
+                                ''''''
+                                
+                                cur.execute(f'Update Students_database3 set Singing = "yes"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                TotalSum.append(p11p)
+                                
+
+                            else:
+                                ''''''
+                                cur.execute(f'Update Students_database3 set Singing = "no"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                
+                        def RP():
+                            brock=p12.get()
+                            if brock == 1:
+                                ''''''
+                                
+                                cur.execute(f'Update Students_database3 set Rapping = "yes"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                TotalSum.append(p12p)
+                                
+
+                            else:
+                                ''''''
+                                cur.execute(f'Update Students_database3 set Rapping = "no"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                
+                        def BTBX():
+                            brock=p13.get()
+                            if brock == 1:
+                                ''''''
+                                
+                                cur.execute(f'Update Students_database3 set Beatboxing = "yes"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                TotalSum.append(p13p)
+                                
+
+                            else:
+                                ''''''
+                                cur.execute(f'Update Students_database3 set Beatboxing = "no"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                
+                        def PGY():
+                            brock=p14.get()
+                            if brock == 1:
+                                ''''''
+                                
+                                cur.execute(f'Update Students_database3 set Photography = "yes"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                TotalSum.append(p14p)
+                                
+
+                            else:
+                                ''''''
+                                cur.execute(f'Update Students_database3 set Photography = "no"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                
+                        def MDI():
+                            brock=p15.get()
+                            if brock == 1:
+                                ''''''
+                                
+                                cur.execute(f'Update Students_database3 set Mehndi = "yes"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                TotalSum.append(p15p)
+                                bj=sum(TotalSum)
+                                
+
+                            else:
+                                ''''''
+                                cur.execute(f'Update Students_database3 set Mehndi = "no"  where Mobile_No="{oneplus}"  ')
+                                con.commit()
+                                
+                        BC()
                 
                     '''Check Boxes'''
                     '''label for that''' 
