@@ -3118,7 +3118,10 @@ def outside_program():
                                 moltresssssssp.place(x=1289,y=62)
                                 ''''''
 
-                                ''''''                                                                                                                                                                                                                                
+                                ''''''    
+                                MEGA_ARCEUS=Label(pikachu,text=dialga,width=30,bg='orange',fg='black',font=("Arial Black",50,"bold"))
+                                MEGA_ARCEUS.place(x=0,y=360)
+                                arceus.place_forget()                                                                                                                                                                                                                            
                                 def backbtn000():
                                     reg_button.configure(state=NORMAL)
                                     ''''''
@@ -3172,8 +3175,8 @@ def outside_program():
                                 PGY()
                                 MDI()
                                 Elist()
-                                pl7.place_forget()
-                                bj=sum(TotalSum)
+                                # pl7.place_forget()
+                                # bj=sum(TotalSum)
 
                                 cur.execute(f'Update Students_database8 set Totalammo = "{bj}"  where Mobile_No="{oneplus}"  ')
                                 con.commit()
@@ -3182,8 +3185,8 @@ def outside_program():
                                 def hommming2():
                                     ''''''
                                     reg_button.configure(state=NORMAL)
-                                    RB1.place_forget()
-                                    RB2.place_forget()
+                                    # RB1.place_forget()
+                                    # RB2.place_forget()
                                     zapados.place_forget()
                                     
                                     Admin_label.place(x=494,y=690)
@@ -3220,28 +3223,28 @@ def outside_program():
                                 ''''''
                                 ''''''
                                 ll1.place_forget()
-                                pl9.place_forget()
-                                pl8.place_forget()
-                                pl7.place_forget
-                                pl4.place_forget()
+                                # pl9.place_forget()
+                                # pl8.place_forget()
+                                # pl7.place_forget
+                                # pl4.place_forget()
 
 
                                 ''''''
                                 
 
-                                mega.place_forget()
-                                megapikachu.place_forget()
-                                mega2.place_forget()
-                                megapikachu2.place_forget()
-                                mega3.place_forget()
-                                megapikachu3.place_forget()
-                                mega4.place_forget()
-                                megapikachu4.place_forget()
-                                mega5.place_forget()
-                                megapikachu5.place_forget()
-                                mega6.place_forget()
-                                megapikachu6.place_forget()
-                                mega7.place_forget()
+                                # mega.place_forget()
+                                # megapikachu.place_forget()
+                                # mega2.place_forget()
+                                # megapikachu2.place_forget()
+                                # mega3.place_forget()
+                                # megapikachu3.place_forget()
+                                # mega4.place_forget()
+                                # megapikachu4.place_forget()
+                                # mega5.place_forget()
+                                # megapikachu5.place_forget()
+                                # mega6.place_forget()
+                                # megapikachu6.place_forget()
+                                # mega7.place_forget()
 
 
 
@@ -3249,28 +3252,28 @@ def outside_program():
                                 MEGA_ARCEUS.place(x=0,y=360)
                                 arceus.place_forget()
                                 ''''''
-                                p01.place_forget()
-                                p02.place_forget()
-                                p03.place_forget()
-                                p04.place_forget()
-                                p044.place_forget()
-                                p05.place_forget()
-                                p06.place_forget()
-                                p07.place_forget()
-                                p077.place_forget()
-                                p08.place_forget()
-                                p088.place_forget()
-                                p0888.place_forget()
-                                p08888.place_forget()
-                                p09.place_forget()
-                                p099.place_forget()
-                                p0999.place_forget()
-                                p010.place_forget()
-                                p011.place_forget()
-                                p012.place_forget() 
-                                p013.place_forget()
-                                p014.place_forget()
-                                p015.place_forget()
+                                # p01.place_forget()
+                                # p02.place_forget()
+                                # p03.place_forget()
+                                # p04.place_forget()
+                                # p044.place_forget()
+                                # p05.place_forget()
+                                # p06.place_forget()
+                                # p07.place_forget()
+                                # p077.place_forget()
+                                # p08.place_forget()
+                                # p088.place_forget()
+                                # p0888.place_forget()
+                                # p08888.place_forget()
+                                # p09.place_forget()
+                                # p099.place_forget()
+                                # p0999.place_forget()
+                                # p010.place_forget()
+                                # p011.place_forget()
+                                # p012.place_forget() 
+                                # p013.place_forget()
+                                # p014.place_forget()
+                                # p015.place_forget()
                                 for idx, event in enumerate(eventslist):
                                     eventsCheck[idx].place_forget()
                                 
@@ -3280,13 +3283,13 @@ def outside_program():
                                     ''''''
                                     reg_button.configure(state=NORMAL)
                                     arceus.configure(state=NORMAL)
-                                    megapikachu0.set('')
-                                    megapikachu20.set('')
-                                    megapikachu30.set('')
-                                    megapikachu40.set('')
-                                    megapikachu50.set('')
-                                    megapikachu60.set('')
-                                    __MOF__.set('')
+                                    # megapikachu0.set('')
+                                    # megapikachu20.set('')
+                                    # megapikachu30.set('')
+                                    # megapikachu40.set('')
+                                    # megapikachu50.set('')
+                                    # megapikachu60.set('')
+                                    # __MOF__.set('')
                                     p1.set(0)
                                     p2.set(0)
                                     p3.set(0)
@@ -3313,29 +3316,29 @@ def outside_program():
                                     moltressssss.place_forget()
                                     moltress0.place_forget()
 
-                                    RB1.place(y=391,x=225)
-                                    RB2.place(y=391,x=300)
+                                    # RB1.place(y=391,x=225)
+                                    # RB2.place(y=391,x=300)
                                     
                                     ll1.place(x = 800, y = 115) 
-                                    pl9.place(x = 820, y = 310)
-                                    pl8.place(x = 820, y = 290)
-                                    pl7.place(x = 820, y = 270)
-                                    pl4.place(x = 820, y = 210)
+                                    # pl9.place(x = 820, y = 310)
+                                    # pl8.place(x = 820, y = 290)
+                                    # pl7.place(x = 820, y = 270)
+                                    # pl4.place(x = 820, y = 210)
 
                                     ''''''
-                                    mega.place(x=110,y=150)
-                                    megapikachu.place(x=240,y=151)
-                                    mega2.place(x=450,y=150)
-                                    megapikachu2.place(x=580,y=151)
-                                    mega3.place(x=110,y=230)
-                                    megapikachu3.place(x=240,y=231)
-                                    mega4.place(x=450,y=230)
-                                    megapikachu4.place(x=580,y=231)
-                                    mega5.place(x=110,y=310)
-                                    megapikachu5.place(x=240,y=311)
-                                    mega6.place(x=450,y=310)
-                                    megapikachu6.place(x=580,y=311)
-                                    mega7.place(x=110,y=390)
+                                    # mega.place(x=110,y=150)
+                                    # megapikachu.place(x=240,y=151)
+                                    # mega2.place(x=450,y=150)
+                                    # megapikachu2.place(x=580,y=151)
+                                    # mega3.place(x=110,y=230)
+                                    # megapikachu3.place(x=240,y=231)
+                                    # mega4.place(x=450,y=230)
+                                    # megapikachu4.place(x=580,y=231)
+                                    # mega5.place(x=110,y=310)
+                                    # megapikachu5.place(x=240,y=311)
+                                    # mega6.place(x=450,y=310)
+                                    # megapikachu6.place(x=580,y=311)
+                                    # mega7.place(x=110,y=390)
                                     ''''''
                                     MEGA_ARCEUS.place_forget()
 
@@ -3343,28 +3346,28 @@ def outside_program():
                                     ''''''
                                     arceus.place(x=600,y=640)
                                     ''''''
-                                    p01.place(x = 800, y = 150)
-                                    p02.place(x = 800, y = 170)
-                                    p03.place(x = 800, y = 190)
-                                    p04.place(x = 960, y = 210)
-                                    p044.place(x = 1020, y = 210)
-                                    p05.place(x = 800, y = 230)
-                                    p06.place(x = 800, y = 250)
-                                    p07.place(x = 960, y = 270)
-                                    p077.place(x = 1020, y = 270)
-                                    p08.place(x = 960, y = 290)
-                                    p088.place(x = 1020, y = 290)
-                                    p0888.place(x = 1100, y = 290)
-                                    p08888.place(x = 1170, y = 290) 
-                                    p09.place(x = 960, y = 310) 
-                                    p099.place(x = 1020, y = 310) 
-                                    p0999.place(x = 1100, y = 310)
-                                    p010.place(x = 800, y = 330)
-                                    p011.place(x = 800, y = 350)
-                                    p012.place(x = 800, y = 370) 
-                                    p013.place(x = 800, y = 390)
-                                    p014.place(x = 800, y = 410) 
-                                    p015.place(x = 800, y = 430)
+                                    # p01.place(x = 800, y = 150)
+                                    # p02.place(x = 800, y = 170)
+                                    # p03.place(x = 800, y = 190)
+                                    # p04.place(x = 960, y = 210)
+                                    # p044.place(x = 1020, y = 210)
+                                    # p05.place(x = 800, y = 230)
+                                    # p06.place(x = 800, y = 250)
+                                    # p07.place(x = 960, y = 270)
+                                    # p077.place(x = 1020, y = 270)
+                                    # p08.place(x = 960, y = 290)
+                                    # p088.place(x = 1020, y = 290)
+                                    # p0888.place(x = 1100, y = 290)
+                                    # p08888.place(x = 1170, y = 290) 
+                                    # p09.place(x = 960, y = 310) 
+                                    # p099.place(x = 1020, y = 310) 
+                                    # p0999.place(x = 1100, y = 310)
+                                    # p010.place(x = 800, y = 330)
+                                    # p011.place(x = 800, y = 350)
+                                    # p012.place(x = 800, y = 370) 
+                                    # p013.place(x = 800, y = 390)
+                                    # p014.place(x = 800, y = 410) 
+                                    # p015.place(x = 800, y = 430)
                                     pikachu.mainloop()
 
                                 ash=os.getcwd()
@@ -3385,7 +3388,7 @@ def outside_program():
                                 cur.execute(f'Update Students_database8 set Rink_Football = "yes"  where Mobile_No="{oneplus}"  ')
                                 
                                 
-                                TotalSum.append(p2p)
+                                # TotalSum.append(p2p)
                                 
 
                             else:
@@ -3402,7 +3405,7 @@ def outside_program():
                                     cur.execute(f'Update Students_database8 set {event[0]} = "yes"  where Mobile_No="{oneplus}"  ')
                                     
                                     print(event)
-                                    TotalSum.append(event[1])
+                                    # TotalSum.append(event[1])
 
                                     
 
@@ -3419,7 +3422,7 @@ def outside_program():
                                 cur.execute(f'Update Students_database8 set Badminton = "yes"  where Mobile_No="{oneplus}"  ')
                                 con.commit()
 
-                                TotalSum.append(p3p)
+                                # TotalSum.append(p3p)
                                 
 
                             else:
