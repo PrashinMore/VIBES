@@ -16,8 +16,6 @@ con.commit()
 cur.execute("CREATE TABLE IF NOT EXISTS New_Events_list8(EventName char(20), Fee int(3), Participants int(2), deleted int(1))")
 cur.execute('select * from New_Events_list8')
 eventslist = cur.fetchall()
-for idx, event in enumerate(eventslist):
-    print(event)
 con.commit()
 '''##############################################'''
 
@@ -141,10 +139,8 @@ def outside_program():
                                                 arceus.configure(state=DISABLED)
                                                 columns=""    
                                                 for idx, event in enumerate(eventslist):
-                                                    print("index is", idx)
+                                                    # if event[3] != 1:
                                                     columns+=",\"\""
-                                                    print(columns)
-                                                print(columns)                           
                                                 cur.execute(f'Insert Into Students_database8 values("{fnames}","{lnames}","{std}","{deadspy_email}","{CLG}","{oneplus}","{MF}",""{columns})')
                                                 
                                                 con.commit()
@@ -159,6 +155,8 @@ def outside_program():
                                                   
                                                     
                                                     for idx,event in enumerate(eventslist):
+                                                        if event[3] == 1:
+                                                            continue
                                                         brock=eventVariable[idx].get()  
 
                                                         if brock == 1:
@@ -294,6 +292,8 @@ def outside_program():
                                                         # p014.place_forget()
                                                         # p015.place_forget()
                                                         for idx, event in enumerate(eventslist):
+                                                            if event[3] == 1:
+                                                                continue        
                                                             eventsCheck[idx].place_forget()
                                                         
             
@@ -1261,6 +1261,8 @@ def outside_program():
                 # p014.place_forget()
                 # p015.place_forget()
                 for idx, event in enumerate(eventslist):
+                    if event[3] == 1:
+                        continue
                     eventsCheck[idx].place_forget()
                 ''''''
                 zapados.place_forget()
@@ -3016,6 +3018,10 @@ def outside_program():
                             
                             
                             for idx,event in enumerate(eventslist):
+                                print("eventVariable index:", idx)
+                                print("eventVariable value:", eventVariable)
+                                if event[3] == 1:
+                                    continue
                                 brock=eventVariable[idx].get()  
 
                                 if brock == 1:
