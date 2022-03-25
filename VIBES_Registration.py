@@ -3068,7 +3068,8 @@ def outside_program():
                                 
                                 # cur.execute(f'Update Students_database8 set Totalammo = "{bj}"  where Mobile_No="{oneplus}"  ')
                                 con.commit()
-                                # dialga="Total Amount = RS."+str(bj)
+                                bj=5
+                                dialga=""
                                 # print("total amount 2")
                                 # MEGA_ARCEUS=Label(pikachu,text=dialga,width=30,bg='blue',fg='yellow',font=("Times",50,"bold"))
                                 # MEGA_ARCEUS.place(x=0,y=360)
@@ -3181,7 +3182,7 @@ def outside_program():
                                 cur.execute(f'Update Students_database8 set Totalammo = "{bj}"  where Mobile_No="{oneplus}"  ')
                                 con.commit()
                                 print("total amount1")
-                                dialga="Total Amount = RS."+str(bj)
+                                # dialga="Total Amount = RS."+str(bj)
                                 def hommming2():
                                     ''''''
                                     reg_button.configure(state=NORMAL)
@@ -5041,7 +5042,7 @@ def outside_program():
                         fee=megapikachu6z.get()
                         Participants=megapikachu3z.get()
                         print(3897)
-                        print(cur.execute("ALTER TABLE Students_database8 ADD "+ename+" varchar(6) DEFAULT ''"))
+                        print(cur.execute("ALTER TABLE Students_database8 ADD "+ename+" varchar(6)"))
                         print(cur.execute(f'INSERT INTO New_Events_list8 (EventName,Fee,Participants,deleted) values ("{ename}","{fee}","{Participants}", 0)'))
                         
 
@@ -5127,7 +5128,7 @@ def outside_program():
                         
                         shubham_y.place_forget()
                         yash_f.place_forget()
-                        ved.place_forget()
+                        # ved.place_forget()
                         diglet1.set('')
                         
                         
