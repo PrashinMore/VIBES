@@ -3914,6 +3914,8 @@ def outside_program():
                         # p014.place_forget()
                         # p015.place_forget()
                         for idx, event in enumerate(eventslist):
+                            if event[3] == 1:
+                                continue  
                             eventsCheck[idx].place_forget()
                         ''''''
                         zapados.place_forget()
