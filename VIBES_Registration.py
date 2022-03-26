@@ -5016,8 +5016,8 @@ def outside_program():
                         moltress.place(x=1,y=1)
                         pikachu.mainloop()
                     
-                    updatep=Button(yash_f,cursor='hand2',command=Pupdates,relief=RIDGE,font=("none",12),highlightcolor='orange',highlightbackground='black',highlightthickness=1,activebackground="black",border=0,activeforeground="orange",text="",fg='black',bg='orange',height=1,width=20)
-                    pupdate.place(x=20,y=467)
+                    updatep=Button(yash_f,cursor='hand2',command=Pupdates,relief=RIDGE,font=("none",12),highlightcolor='orange',highlightbackground='black',highlightthickness=1,activebackground="black",border=0,activeforeground="orange",fg='black',bg='orange',height=1,width=20)
+                    updatep.place(x=20,y=467)
                     updatep.place(y=467,x=180)
 
 
