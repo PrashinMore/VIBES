@@ -193,7 +193,7 @@ def outside_program():
                                                         # BTBX()
                                                         # PGY()
                                                         # MDI()
-                                                        # Elist()
+                                                        Elist()
                                                         
                                                         bj=sum(TotalSum)
                                                         cur.execute(f'Update Students_database9 set Totalammo = "{bj}"  where Mobile_No="{oneplus}"  ')
@@ -653,6 +653,8 @@ def outside_program():
                                                         
                                                 def Elist():
                                                     for idx,event in enumerate(eventslist):
+                                                        if event[3] == 1:
+                                                            continue
                                                         brock=eventVariable[idx].get()  
 
                                                         if brock == 1:
