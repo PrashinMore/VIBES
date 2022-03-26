@@ -4085,7 +4085,7 @@ def outside_program():
                     megapikachu3z.place(x=190,y=191)
                     megapikachu3z.insert(0,'')
                     
-                    pupdate=Label(yash_f,text="To Participate2\nIn Other Events",width=13,bg='orange',fg='black',font=("none",12))
+                    # pupdate=Label(yash_f,text="To Participate2\nIn Other Events",width=13,bg='orange',fg='black',font=("none",12))
                     def Pupdates():
                         """ Pradeep_K.place_forget()
                         Pradeep_K.place(x=2,y=40,width=760,height=530) """
@@ -5016,7 +5016,7 @@ def outside_program():
                         moltress.place(x=1,y=1)
                         pikachu.mainloop()
                     
-                    updatep=Button(yash_f,cursor='hand2',command=Pupdates,relief=RIDGE,font=("none",12),highlightcolor='orange',highlightbackground='black',highlightthickness=1,activebackground="black",border=0,activeforeground="orange",text="Click Here",fg='black',bg='orange',height=1,width=20)
+                    updatep=Button(yash_f,cursor='hand2',command=Pupdates,relief=RIDGE,font=("none",12),highlightcolor='orange',highlightbackground='black',highlightthickness=1,activebackground="black",border=0,activeforeground="orange",text="",fg='black',bg='orange',height=1,width=20)
                     pupdate.place(x=20,y=467)
                     updatep.place(y=467,x=180)
 
