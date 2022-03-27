@@ -392,7 +392,7 @@ def outside_program():
                                                         ook=ash+"//reply.png"
                                                         
                                                         photo22 = PhotoImage(file=ook)
-                                                        moltress = Button(pikachu,cursor='hand2',highlightthickness=0,activeforeground="black",activebackground='black',bg="black",image=photo22 ,width=73,height=65,bd=0,command=backbtn000)
+                                                        moltress = Button(pikachu,cursor='hand2',highlightthickness=0,activeforeground="black",activebackground='black',bg="black",image=photo22 ,width=73,height=65,bd=0,command=hommming11)
                                                         moltress.place(x=0,y=62)
                                                         
                                                         pikachu.mainloop()
@@ -1274,7 +1274,7 @@ def outside_program():
             
 
 
-            zapados = Button(pikachu,cursor='hand2',activeforeground="black",activebackground='black',bg="black",image=photo22 ,width=73,height=65,bd=0,highlightthickness=0,command=backbtn100)
+            zapados = Button(pikachu,cursor='hand2',activeforeground="black",activebackground='black',bg="black",image=photo22 ,width=73,height=65,bd=0,highlightthickness=0,command=backbtn1)
             zapados.place(x=0,y=62)
             pikachu.mainloop()
         regit=os.getcwd()
