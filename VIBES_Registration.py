@@ -199,7 +199,6 @@ def outside_program():
                                                         cur.execute(f'Update Students_database9 set Totalammo = "{bj}"  where Mobile_No="{oneplus}"  ')
                                                         con.commit()
                                                         dialga="Total Amount = RS."+str(bj)
-                                                        print("total amount 2")
                                                         MEGA_ARCEUS=Label(pikachu,text=dialga,width=30,bg='blue',fg='yellow',font=("Times",50,"bold"))
                                                         MEGA_ARCEUS.place(x=0,y=360)
 
@@ -1045,7 +1044,7 @@ def outside_program():
             RB2.place(y=391,x=315)
             '''Check Boxes'''
             '''label for that''' 
-            ll1=Label(pikachu, text ='Select Event To Participate',font=("Arial Black",13),bg="orange",fg="black")
+            ll1=Label(pikachu, text ='Select Event To Participaste',font=("Arial Black",13),bg="orange",fg="black")
             ll1.place(x = 800, y = 115) 
             
                 
@@ -1275,7 +1274,7 @@ def outside_program():
             
 
 
-            zapados = Button(pikachu,cursor='hand2',activeforeground="black",activebackground='black',bg="black",image=photo22 ,width=73,height=65,bd=0,highlightthickness=0,command=backbtn1)
+            zapados = Button(pikachu,cursor='hand2',activeforeground="black",activebackground='black',bg="black",image=photo22 ,width=73,height=65,bd=0,highlightthickness=0,command=backbtn100)
             zapados.place(x=0,y=62)
             pikachu.mainloop()
         regit=os.getcwd()
@@ -4099,8 +4098,8 @@ def outside_program():
                         moltressx.place_forget()
                         yash_f.place_forget()
                         neelC.grid_forget()
-                        apreetiC.grid_forget()
-                        omC.grid_forget()
+                        # apreetiC.grid_forget()
+                        # omC.grid_forget()
 
                         imraan=Frame(pikachu,bd=1,highlightthickness=3,highlightbackground="orange",relief=RIDGE,bg="orange")
                         imraan.place(x=20,y=150,width=510,height=600)
