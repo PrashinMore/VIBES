@@ -213,8 +213,8 @@ def outside_program():
                                                             
                                                             Exit_button.place(x=690,y=530)
                                                             Admin_Login_button.place(x=480,y=530)
-                                                            Remove_label_button.place(x=880,y=310)
-                                                            Edit_label_button.place(x=890,y=530)
+                                                            Remove_label_button.place(x=690,y=310)
+                                                            Edit_label_button.place(x=480,y=310)
 
                                                             #Vibes_Events_All_Info_button.place(x=690,y=310)
                                                             #Vibes_Events.place(x=480,y=310)
@@ -223,8 +223,8 @@ def outside_program():
 
                                                             ''''''
                                                             Admin_label.place(x=494,y=690)
-                                                            Remove_label.place(x=880,y=470)
-                                                            Edit_label.place(x=890,y=530)
+                                                            Remove_label.place(x=720,y=470)
+                                                            Edit_label.place(x=500,y=470)
                                                             Exit_label.place(x=756,y=690)
                                                             # #Vibes_label.place(x=507,y=470)
                                                             # #eventall_label.place(x=720,y=470)
@@ -243,8 +243,8 @@ def outside_program():
                                                         ookoooooo=ash000000+"//home.png"
                                                         
                                                         photo2222222 = PhotoImage(file=ookoooooo)
-                                                        moltresssssssp = Button(pikachu,cursor='hand2',command=hommming11,bd=0,bg="black",activeforeground="orange",activebackground='black',image=photo2222222 ,width=73,height=65,highlightthickness=0)
-                                                        moltresssssssp.place(x=1289,y=62)
+                                                        moltresssssssp = Button(pikachu,cursor='hand2',command=hommming11,bd=0,bg="black",activeforeground="orange",activebackground='black',image=photo2222222 ,width=53,height=55,highlightthickness=0)
+                                                        moltresssssssp.place(x=789,y=62)
                                                         ''''''
                                                         ll1.place_forget()
                                                         # pl9.place_forget()
@@ -445,8 +445,8 @@ def outside_program():
                                                             zapados.place_forget()
                                                             
                                                             Admin_label.place(x=494,y=690)
-                                                            Remove_label.place(x=880,y=470)
-                                                            Edit_label.place(x=890,y=530)
+                                                            Remove_label.place(x=720,y=470)
+                                                            Edit_label.place(x=500,y=470)
                                                             Exit_label.place(x=756,y=690)
                                                             # #Vibes_label.place(x=507,y=470)
                                                             # #eventall_label.place(x=720,y=470)
@@ -458,8 +458,8 @@ def outside_program():
 
                                                             Exit_button.place(x=690,y=530)
                                                             Admin_Login_button.place(x=480,y=530)
-                                                            Remove_label_button.place(x=880,y=310)
-                                                            Edit_label_button.place(x=890,y=530)
+                                                            Remove_label_button.place(x=690,y=310)
+                                                            Edit_label_button.place(x=480,y=310)
                                                             #Vibes_Events_All_Info_button.place(x=690,y=310)
                                                             #Vibes_Events.place(x=480,y=310)
                                                             About_Vibes_button.place(x=690,y=90)
@@ -473,8 +473,8 @@ def outside_program():
                                                         ookoooooo=ash000000+"//home.png"
                                                         
                                                         photo2222222 = PhotoImage(file=ookoooooo)
-                                                        moltressssss = Button(pikachu,cursor='hand2',command=hommming2,bd=0,bg="black",activeforeground="orange",activebackground='black',image=photo2222222 ,highlightthickness=0,width=73,height=65)
-                                                        moltressssss.place(x=1289,y=62)
+                                                        moltressssss = Button(pikachu,cursor='hand2',command=hommming2,bd=0,bg="black",activeforeground="orange",activebackground='black',image=photo2222222 ,highlightthickness=0,width=53,height=55)
+                                                        moltressssss.place(x=789,y=62)
                                                         ''''''
                                                         ''''''
                                                         ll1.place_forget()
@@ -1202,9 +1202,9 @@ def outside_program():
                 # pl7.place_forget()
                 # pl4.place_forget()
                 Admin_label.place(x=494,y=690)
-                Remove_label.place(x=880,y=470)
+                Remove_label.place(x=720,y=470)
                 Exit_label.place(x=756,y=690)
-                Edit_label.place(x=890,y=690)
+                Edit_label.place(x=500,y=470)
                 # #Vibes_label.place(x=507,y=470)
                 # #eventall_label.place(x=720,y=470)
                 reg_label.place(x=515,y=250)
@@ -1231,8 +1231,8 @@ def outside_program():
                 ''''''
                 Exit_button.place(x=690,y=530)
                 Admin_Login_button.place(x=480,y=530)
-                Remove_label_button.place(x=880,y=310)
-                Edit_label_button.place(x=890,y=530)
+                Remove_label_button.place(x=690,y=310)
+                Edit_label_button.place(x=480,y=310)
                 #Vibes_Events_All_Info_button.place(x=690,y=310)
                 #Vibes_Events.place(x=480,y=310)
                 About_Vibes_button.place(x=690,y=90)
@@ -1283,7 +1283,7 @@ def outside_program():
         photoRR = PhotoImage(file=regit2)
         reg_button=Button(pikachu,bd=0,cursor='hand2',highlightthickness=2,highlightcolor='orange',highlightbackground='orange',activebackground="black",image=photoRR,width=170,height=170,bg="black",command=reg_button_1)
         reg_button.place(x=480,y=90)
-        reg_label=Label(pikachu,font=("Arial Black",15,"bold"),text='Register',bd=0,highlightthickness=0,bg='black',fg='orange')
+        reg_label=Label(pikachu,font=("Times",20,"bold"),text='Register',bd=0,highlightthickness=0,bg='black',fg='orange')
         reg_label.place(x=515,y=250)
         def About_Vibes_button_2():
             '''Button 2 Functions The following Program '''
@@ -1323,18 +1323,18 @@ def outside_program():
                 moltresssssspp.place_forget()
                 
                 charizard.place_forget()
-                Edit_label.place(x=890,y=530)
+                Edit_label.place(x=500,y=470)
                 Admin_label.place(x=494,y=690)
-                Remove_label.place(x=880,y=470)
+                Remove_label.place(x=720,y=470)
                 Exit_label.place(x=756,y=690)
                 # #Vibes_label.place(x=507,y=470)
                 # #eventall_label.place(x=720,y=470)
                 reg_label.place(x=515,y=250)
-                Remove_label_button.place(x=880,y=310)
+                Remove_label_button.place(x=690,y=310)
                 About_label.place(x=706,y=250)
                 Exit_button.place(x=690,y=530)
                 Admin_Login_button.place(x=480,y=530)
-                Edit_label_button.place(x=890,y=530)
+                Edit_label_button.place(x=480,y=310)
                 #Vibes_Events_All_Info_button.place(x=690,y=310)
                 #Vibes_Events.place(x=480,y=310)
                 About_Vibes_button.place(x=690,y=90)
@@ -1360,7 +1360,7 @@ def outside_program():
 
             with open("AboutVibes.txt","r") as op:
                 charizard=Label(pikachu,bg="black",font=("Consolas",23,"bold"),fg="orange",text=op.read())
-                charizard.place(x=50,y=150)
+                charizard.place(x=50,y=120)
             pikachu.mainloop()    
         aboutv=os.getcwd()
         aboutv2=aboutv+"//information.png"
@@ -1401,16 +1401,16 @@ def outside_program():
                 moltress.place_forget()
                 
                 Admin_label.place(x=494,y=690)
-                Remove_label.place(x=880,y=470)
+                Remove_label.place(x=720,y=470)
                 Exit_label.place(x=756,y=690)
-                Edit_label.place(x=890,y=530)
+                Edit_label.place(x=500,y=470)
                 # #Vibes_label.place(x=507,y=470)
                 # #eventall_label.place(x=720,y=470)
                 reg_label.place(x=515,y=250)
                 About_label.place(x=706,y=250)
                 Exit_button.place(x=690,y=530)
                 Admin_Login_button.place(x=480,y=530)
-                Edit_label_button.place(x=890,y=530)
+                Edit_label_button.place(x=480,y=310)
                 #Vibes_Events_All_Info_button.place(x=690,y=310)
                 #Vibes_Events.place(x=480,y=310)
                 About_Vibes_button.place(x=690,y=90)
@@ -1457,7 +1457,7 @@ def outside_program():
                 """ charizard.place_forget() """
                 listbox.place_forget()
                 
-                Edit_label.place(x=890,y=530)
+                Edit_label.place(x=500,y=470)
                 Admin_label.place(x=494,y=690)
                 Exit_label.place(x=756,y=690)
                 #Vibes_label.place(x=507,y=470)
@@ -1465,8 +1465,8 @@ def outside_program():
                 reg_label.place(x=515,y=250)
                 About_label.place(x=706,y=250)
                 Exit_button.place(x=690,y=530)
-                Edit_label_button.place(x=890,y=530)
-                Remove_label_button.place(x=880,y=310)
+                Edit_label_button.place(x=480,y=310)
+                Remove_label_button.place(x=690,y=310)
                 Admin_Login_button.place(x=480,y=530)
                 #Vibes_Events_All_Info_button.place(x=690,y=310)
                 #Vibes_Events.place(x=480,y=310)
@@ -1537,9 +1537,9 @@ def outside_program():
                     
                     '''INSERT FRAME LEFT'''
                     yash_f=Frame(pikachu,bd=1,highlightthickness=3,highlightbackground="orange",relief=SUNKEN,bg="orange")
-                    yash_f.place(x=20,y=150,width=510,height=600)
+                    yash_f.place(x=20,y=130,width=450,height=600)
                     ''''''
-                    rock=Label(yash_f,text="Registered Data",width=13,bg='orange',fg='black',font=("Arial Black",25,"bold"))
+                    rock=Label(yash_f,text="Registered Data",width=13,bg='orange',fg='black',font=("Times",20,"bold"))
                     rock.pack(side=TOP,fill=X)
                     
 
@@ -2616,7 +2616,7 @@ def outside_program():
                     
                     '''INSERT FRAME RIGHT'''
                     ved=Frame(pikachu,bd=1,highlightthickness=3,highlightbackground="orange",relief=RIDGE,bg="orange")
-                    ved.place(height=600,y=150,x=570,width=770)
+                    ved.place(height=600,y=130,x=500,width=770)
                     
                     ''''''
                     py_lb=Label(ved,text="Search By",width=9,bg='orange',fg='black',font=("Arial Black",20,"bold"))
@@ -2740,7 +2740,7 @@ def outside_program():
                         def notification():
                             ''''''
                             
-                            subprocess.Popen(['wps','vibes_offline_data_text.csv']).wait()
+                            subprocess.Popen(['wps',f'vibes_offline_data_text.csv']).wait()
                             notbutton.place_forget()
                         notbutton=Button(pikachu,relief=RIDGE,highlightcolor='orange',highlightbackground='black',highlightthickness=1,activebackground="black",border=0,activeforeground="orange",fg='black',bg='orange',command=notification,text=' ⛃ Open vibes_text.csv ?',width=16,height=2)
                         notbutton.place(x=2,y=2)
@@ -2817,8 +2817,8 @@ def outside_program():
                         yash_f.place_forget()
                         ved.place_forget()
                         Exit_button.place(x=690,y=530)
-                        Edit_label_button.place(x=890,y=530)
-                        Remove_label_button.place(x=880,y=310)
+                        Edit_label_button.place(x=480,y=310)
+                        Remove_label_button.place(x=690,y=310)
                         Admin_Login_button.place(x=480,y=530)
                         #Vibes_Events_All_Info_button.place(x=690,y=310)
                         #Vibes_Events.place(x=480,y=310)
@@ -2826,8 +2826,8 @@ def outside_program():
                         reg_button.place(x=480,y=90)
                                                 
                         Admin_label.place(x=494,y=690)
-                        Remove_label.place(x=880,y=470)
-                        Edit_label.place(x=890,y=530)
+                        Remove_label.place(x=720,y=470)
+                        Edit_label.place(x=500,y=470)
                         Exit_label.place(x=756,y=690)
                         # #Vibes_label.place(x=507,y=470)
                         # #eventall_label.place(x=720,y=470)
@@ -2845,8 +2845,8 @@ def outside_program():
                     ookooooo=ash00000+"//home.png"
                     
                     photo222222 = PhotoImage(file=ookooooo)
-                    moltresssss = Button(pikachu,cursor='hand2',command=hommming,bd=0,bg="black",activeforeground="black",activebackground='black',image=photo222222 ,highlightthickness=0,width=73,height=65)
-                    moltresssss.place(x=1289,y=62)
+                    moltresssss = Button(pikachu,cursor='hand2',command=hommming,bd=0,bg="black",activeforeground="black",activebackground='black',image=photo222222 ,highlightthickness=0,width=53,height=55)
+                    moltresssss.place(x=789,y=62)
                       
                         
                     
@@ -2883,7 +2883,7 @@ def outside_program():
                     showerror("RECHECK","Error \nWrong Pass Bot!")
                 
             pubgm=Frame(pikachu,bd=0,highlightthickness=3,highlightcolor='orange',highlightbackground="orange",relief=RIDGE,bg="black")
-            pubgm.place(x=425,y=160,width=510,height=580)
+            pubgm.place(x=425,y=160,width=510,height=520)
             Label(pubgm,text="Mod-Pass",font=("Arial Black",20,"bold"),bg="black",fg="black").pack()
             diglet1=StringVar()
             diglet=Entry(pubgm,textvariable=diglet1,highlightcolor='orange',highlightbackground='orange',highlightthickness=2,bd=1,insertbackground="orange",width=24,font=("Times New Roman",25),fg="orange",bg="black")
@@ -2918,7 +2918,7 @@ def outside_program():
             
 
             ''''''
-            ekanas=Button(pubgm,command=submitpass,cursor='hand2',activebackground="black",highlightcolor='orange',highlightbackground='orange',highlightthickness=1,bd=0,activeforeground="orange",text="Submit",fg='black',bg='orange',height=3,width=20)
+            ekanas=Button(pubgm,command=submitpass,cursor='hand2',activebackground="black",highlightcolor='orange',highlightbackground='orange',highlightthickness=1,bd=0,activeforeground="orange",text="Login",fg='black',bg='orange',height=3,width=20)
             ekanas.pack(side=BOTTOM)
             ash00=os.getcwd()
             ookoo=ash00+"//user.png"
@@ -2934,15 +2934,15 @@ def outside_program():
                 
                 Exit_button.place(x=690,y=530)
                 Admin_Login_button.place(x=480,y=530)
-                Remove_label_button.place(x=880,y=310)
-                Edit_label_button.place(x=890,y=530)
+                Remove_label_button.place(x=690,y=310)
+                Edit_label_button.place(x=480,y=310)
                 #Vibes_Events_All_Info_button.place(x=690,y=310)
                 #Vibes_Events.place(x=480,y=310)
                 About_Vibes_button.place(x=690,y=90)
                 reg_button.place(x=480,y=90)
                 Admin_label.place(x=494,y=690)
-                Remove_label.place(x=880,y=470)
-                Edit_label.place(x=890,y=530)
+                Remove_label.place(x=720,y=470)
+                Edit_label.place(x=500,y=470)
 
                 Exit_label.place(x=756,y=690)
                 # #Vibes_label.place(x=507,y=470)
@@ -3071,7 +3071,7 @@ def outside_program():
                                 # cur.execute(f'Update Students_database9 set Totalammo = "{bj}"  where Mobile_No="{oneplus}"  ')
                                 con.commit()
                                 bj=5
-                                dialga=""
+                                dialga="Removed"
                                 # print("total amount 2")
                                 # MEGA_ARCEUS=Label(pikachu,text=dialga,width=30,bg='blue',fg='yellow',font=("Times",50,"bold"))
                                 # MEGA_ARCEUS.place(x=0,y=360)
@@ -3087,8 +3087,8 @@ def outside_program():
                                     
                                     Exit_button.place(x=690,y=530)
                                     Admin_Login_button.place(x=480,y=530)
-                                    Remove_label_button.place(x=880,y=310)
-                                    Edit_label_button.place(x=890,y=530)
+                                    Remove_label_button.place(x=690,y=310)
+                                    Edit_label_button.place(x=480,y=310)
 
                                     #Vibes_Events_All_Info_button.place(x=690,y=310)
                                     #Vibes_Events.place(x=480,y=310)
@@ -3097,8 +3097,8 @@ def outside_program():
 
                                     ''''''
                                     Admin_label.place(x=494,y=690)
-                                    Remove_label.place(x=880,y=470)
-                                    Edit_label.place(x=890,y=530)
+                                    Remove_label.place(x=720,y=470)
+                                    Edit_label.place(x=500,y=470)
                                     Exit_label.place(x=756,y=690)
                                     # #Vibes_label.place(x=507,y=470)
                                     # #eventall_label.place(x=720,y=470)
@@ -3117,8 +3117,8 @@ def outside_program():
                                 ookoooooo=ash000000+"//home.png"
                                 
                                 photo2222222 = PhotoImage(file=ookoooooo)
-                                moltresssssssp = Button(pikachu,cursor='hand2',command=hommming11,bd=0,bg="black",activeforeground="orange",activebackground='black',image=photo2222222 ,width=73,height=65,highlightthickness=0)
-                                moltresssssssp.place(x=1289,y=62)
+                                moltresssssssp = Button(pikachu,cursor='hand2',command=hommming11,bd=0,bg="black",activeforeground="orange",activebackground='black',image=photo2222222 ,width=53,height=55,highlightthickness=0)
+                                moltresssssssp.place(x=789,y=62)
                                 ''''''
 
                                 ''''''    
@@ -3193,8 +3193,8 @@ def outside_program():
                                     zapados.place_forget()
                                     
                                     Admin_label.place(x=494,y=690)
-                                    Remove_label.place(x=880,y=470)
-                                    Edit_label.place(x=890,y=530)
+                                    Remove_label.place(x=720,y=470)
+                                    Edit_label.place(x=500,y=470)
                                     Exit_label.place(x=756,y=690)
                                     # #Vibes_label.place(x=507,y=470)
                                     # #eventall_label.place(x=720,y=470)
@@ -3206,8 +3206,8 @@ def outside_program():
 
                                     Exit_button.place(x=690,y=530)
                                     Admin_Login_button.place(x=480,y=530)
-                                    Remove_label_button.place(x=880,y=310)
-                                    Edit_label_button.place(x=890,y=530)
+                                    Remove_label_button.place(x=690,y=310)
+                                    Edit_label_button.place(x=480,y=310)
                                     #Vibes_Events_All_Info_button.place(x=690,y=310)
                                     #Vibes_Events.place(x=480,y=310)
                                     About_Vibes_button.place(x=690,y=90)
@@ -3221,8 +3221,8 @@ def outside_program():
                                 ookoooooo=ash000000+"//home.png"
                                 
                                 photo2222222 = PhotoImage(file=ookoooooo)
-                                moltressssss = Button(pikachu,cursor='hand2',command=hommming2,bd=0,bg="black",activeforeground="orange",activebackground='black',image=photo2222222 ,highlightthickness=0,width=73,height=65)
-                                moltressssss.place(x=1289,y=62)
+                                moltressssss = Button(pikachu,cursor='hand2',command=hommming2,bd=0,bg="black",activeforeground="orange",activebackground='black',image=photo2222222 ,highlightthickness=0,width=53,height=55)
+                                moltressssss.place(x=789,y=62)
                                 ''''''
                                 ''''''
                                 ll1.place_forget()
@@ -3724,7 +3724,7 @@ def outside_program():
                     '''Check Boxes'''
                     '''label for that''' 
                     ll1=Label(pikachu, text ='Select Events To Remove',font=("Arial Black",13),bg="orange",fg="black")
-                    ll1.place(x = 800, y = 115) 
+                    ll1.place(x = 400, y = 115) 
                     
                         
                     '''check buttons '''
@@ -3861,11 +3861,11 @@ def outside_program():
                         y=y+20
                         eventsCheck[idx]=Checkbutton(pikachu,variable=eventVariable[idx], text =event[0],font=("Arial Black",10,"bold"),highlightcolor='black',fg="orange",bg='black',highlightbackground='black',highlightthickness=1,bd=1,activeforeground='orange',activebackground='black',selectcolor="black", 
                                     takefocus = 0)
-                        eventsCheck[idx].place(x=800,y=y)
+                        eventsCheck[idx].place(x=400,y=y)
                     
 
-                    arceus=Button(pikachu,command=pokeball,state=NORMAL,activebackground="black",border=0,activeforeground="orange",text="Ssubmit",fg='black',bg='orange',height=3,width=16)
-                    arceus.place(x=600,y=640)
+                    arceus=Button(pikachu,command=pokeball,state=NORMAL,activebackground="black",border=0,activeforeground="orange",text="Submit",fg='black',bg='orange',height=3,width=16)
+                    arceus.place(x=580,y=640)
 
                     def backbtn10():
                         '''''' 
@@ -3876,21 +3876,22 @@ def outside_program():
                         # pl7.place_forget()
                         # pl4.place_forget()
                         Admin_label.place(x=494,y=690)
-                        Remove_label.place(x=880,y=470)
+                        Remove_label.place(x=720,y=470)
                         Exit_label.place(x=756,y=690)
-                        Edit_label.place(x=890,y=690)
+                        Edit_label.place(x=500,y=470)
                         # #Vibes_label.place(x=507,y=470)
                         # #eventall_label.place(x=720,y=470)
                         reg_label.place(x=515,y=250)
                         About_label.place(x=706,y=250)
+                        
 
                         ''''''
                         arceus.place_forget()
                         ''''''
                         Exit_button.place(x=690,y=530)
-                        Remove_label_button.place(x=880,y=310)
+                        Remove_label_button.place(x=690,y=310)
                         Admin_Login_button.place(x=480,y=530)
-                        Edit_label_button.place(x=890,y=530)
+                        Edit_label_button.place(x=480,y=310)
                         #Vibes_Events_All_Info_button.place(x=690,y=310)
                         #Vibes_Events.place(x=480,y=310)
                         About_Vibes_button.place(x=690,y=90)
@@ -3941,7 +3942,7 @@ def outside_program():
                     showerror("RECHECK","Error \nWrong Pass Bot!")
                             
             pubgm=Frame(pikachu,bd=0,highlightthickness=3,highlightcolor='orange',highlightbackground="orange",relief=RIDGE,bg="black")
-            pubgm.place(x=425,y=160,width=510,height=580)
+            pubgm.place(x=425,y=160,width=510,height=520)
             Label(pubgm,text="Mod-Pass",font=("Arial Black",20,"bold"),bg="black",fg="black").pack()
             diglet1=StringVar()
             diglet=Entry(pubgm,textvariable=diglet1,highlightcolor='orange',highlightbackground='orange',highlightthickness=2,bd=1,insertbackground="orange",width=24,font=("Times New Roman",25),fg="orange",bg="black")
@@ -3991,16 +3992,16 @@ def outside_program():
                 ''''''
                 
                 Exit_button.place(x=690,y=530)
-                Remove_label_button.place(x=880,y=310)
+                Remove_label_button.place(x=690,y=310)
                 Admin_Login_button.place(x=480,y=530)
-                Edit_label_button.place(x=890,y=530)
+                Edit_label_button.place(x=480,y=310)
                 #Vibes_Events_All_Info_button.place(x=690,y=310)
                 #Vibes_Events.place(x=480,y=310)
                 About_Vibes_button.place(x=690,y=90)
                 reg_button.place(x=480,y=90)
-                Edit_label.place(x=890,y=530)
+                Edit_label.place(x=500,y=470)
                 Admin_label.place(x=494,y=690)
-                Remove_label.place(x=880,y=470)
+                Remove_label.place(x=720,y=470)
                 Exit_label.place(x=756,y=690)
                 # #Vibes_label.place(x=507,y=470)
                 # #eventall_label.place(x=720,y=470)
@@ -4050,9 +4051,9 @@ def outside_program():
                     
                     '''INSERT FRAME LEFT'''
                     yash_f=Frame(pikachu,bd=1,highlightthickness=3,highlightbackground="orange",relief=SUNKEN,bg="orange")
-                    yash_f.place(x=20,y=150,width=510,height=600)
+                    yash_f.place(x=400,y=150,width=510,height=600)
                     ''''''
-                    rock=Label(yash_f,text="Registered Data",width=13,bg='orange',fg='black',font=("Arial Black",25,"bold"))
+                    rock=Label(yash_f,text="Add events",width=13,bg='orange',fg='black',font=("Times",20,"bold"))
                     rock.pack(side=TOP,fill=X)
                     
 
@@ -5074,7 +5075,7 @@ def outside_program():
                         clearit()
                         
                     
-                    neelC=Button(shubham_y,cursor='hand2',relief=RIDGE,highlightcolor='orange',highlightbackground='orange',highlightthickness=1,activebackground="black",border=0,activeforeground="orange",text="Add Events",command=addEvent,fg='black',bg='orange',height=2,width=14)
+                    neelC=Button(shubham_y,cursor='hand2',relief=RIDGE,highlightcolor='orange',highlightbackground='orange',highlightthickness=1,activebackground="black",border=0,activeforeground="orange",text="Add",command=addEvent,fg='black',bg='orange',height=2,width=14)
                     neelC.grid(row=0,column=0,padx=10,pady=9)
                     ''''''
                     
@@ -5087,16 +5088,16 @@ def outside_program():
                         yash_f.place_forget()
                         Exit_button.place(x=690,y=530)
                         Admin_Login_button.place(x=480,y=530)
-                        Remove_label_button.place(x=880,y=310)
-                        Edit_label_button.place(x=890,y=530)
+                        Remove_label_button.place(x=690,y=310)
+                        Edit_label_button.place(x=480,y=310)
                         #Vibes_Events_All_Info_button.place(x=690,y=310)
                         #Vibes_Events.place(x=480,y=310)
                         About_Vibes_button.place(x=690,y=90)
                         reg_button.place(x=480,y=90)
                                                 
                         Admin_label.place(x=494,y=690)
-                        Remove_label.place(x=880,y=470)
-                        Edit_label.place(x=890,y=530)
+                        Remove_label.place(x=720,y=470)
+                        Edit_label.place(x=500,y=470)
                         Exit_label.place(x=756,y=690)
                         # #Vibes_label.place(x=507,y=470)
                         # #eventall_label.place(x=720,y=470)
@@ -5113,8 +5114,8 @@ def outside_program():
                     ookooooo=ash00000+"//home.png"
                     
                     photo222222 = PhotoImage(file=ookooooo)
-                    moltresssss = Button(pikachu,cursor='hand2',command=hommming,bd=0,bg="black",activeforeground="black",activebackground='black',image=photo222222 ,highlightthickness=0,width=73,height=65)
-                    moltresssss.place(x=1289,y=62)
+                    moltresssss = Button(pikachu,cursor='hand2',command=hommming,bd=0,bg="black",activeforeground="black",activebackground='black',image=photo222222 ,highlightthickness=0,width=53,height=55)
+                    moltresssss.place(x=789,y=62)
                       
                         
                     
@@ -5151,7 +5152,7 @@ def outside_program():
                     showerror("RECHECK","Error \nWrong Pass Bot!")
                 
             pubgm=Frame(pikachu,bd=0,highlightthickness=3,highlightcolor='orange',highlightbackground="orange",relief=RIDGE,bg="black")
-            pubgm.place(x=425,y=160,width=510,height=580)
+            pubgm.place(x=425,y=160,width=510,height=520)
             Label(pubgm,text="Mod-Pass",font=("Arial Black",20,"bold"),bg="black",fg="black").pack()
             diglet1=StringVar()
             diglet=Entry(pubgm,textvariable=diglet1,highlightcolor='orange',highlightbackground='orange',highlightthickness=2,bd=1,insertbackground="orange",width=24,font=("Times New Roman",25),fg="orange",bg="black")
@@ -5201,16 +5202,16 @@ def outside_program():
                 ''''''
                 
                 Exit_button.place(x=690,y=530)
-                Remove_label_button.place(x=880,y=310)
+                Remove_label_button.place(x=690,y=310)
                 Admin_Login_button.place(x=480,y=530)
-                Edit_label_button.place(x=890,y=530)
+                Edit_label_button.place(x=480,y=310)
                 #Vibes_Events_All_Info_button.place(x=690,y=310)
                 #Vibes_Events.place(x=480,y=310)
                 About_Vibes_button.place(x=690,y=90)
                 reg_button.place(x=480,y=90)
-                Edit_label.place(x=890,y=530)
+                Edit_label.place(x=500,y=470)
                 Admin_label.place(x=494,y=690)
-                Remove_label.place(x=880,y=470)
+                Remove_label.place(x=720,y=470)
                 Exit_label.place(x=756,y=690)
                 # #Vibes_label.place(x=507,y=470)
                 # #eventall_label.place(x=720,y=470)
@@ -5235,20 +5236,20 @@ def outside_program():
         photoEd = PhotoImage(file=edited)   
 
         Edit_label_button=Button(pikachu,cursor='hand2',text='Exit',bd=0,highlightthickness=2,highlightbackground='cyan',highlightcolor='cyan',activebackground="black",image=photoEd,width=170,height=170,bg="black",command=Edit_Events_7)
-        Edit_label_button.place(x=890,y=490)
+        Edit_label_button.place(x=480,y=310)
         
         Edit_label=Label(pikachu,font=("Times",20,"bold"),text='Add-Events',bd=0,highlightthickness=0,bg='black',fg='orange')
-        Edit_label.place(x=890,y=690)
+        Edit_label.place(x=500,y=470)
 
         removeit=os.getcwd()
         edited=removeit+"//domain.png"
         photoRemove = PhotoImage(file=edited)   
 
         Remove_label_button=Button(pikachu,cursor='hand2',text='Exit',bd=0,highlightthickness=2,highlightbackground='cyan',highlightcolor='cyan',activebackground="black",image=photoRemove,width=170,height=170,bg="black",command=Remove_Events_8)
-        Remove_label_button.place(x=880,y=310)
+        Remove_label_button.place(x=690,y=310)
         
         Remove_label=Label(pikachu,font=("Times",20,"bold"),text='Remove-Events',bd=0,highlightthickness=0,bg='black',fg='orange')
-        Remove_label.place(x=880,y=470)
+        Remove_label.place(x=720,y=470)
 
 
         exitit=os.getcwd()
